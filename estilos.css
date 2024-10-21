@@ -17,6 +17,7 @@
     background-color: #F6EDD9;
     padding: 20px 120px;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .botonera ul {
@@ -28,7 +29,7 @@
 .botonera a {
     border-radius: 25px;
     background-color: #285B4C;
-    box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #F6EDD9;
     padding: 10px 15px;
 }
@@ -58,6 +59,7 @@ p {
     color: #285B4C;
     font-weight: 400;
 }
+
 footer {
     display: flex;
     width: 100%;
@@ -65,6 +67,7 @@ footer {
     justify-content: space-between;
     padding: 50px 120px;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .redes {
@@ -72,6 +75,10 @@ footer {
     gap: 20px;
     align-items: center;
     padding: 15px 0px;
+}
+
+.redes p {
+    color: #F6EDD9;
 }
 
 .mapasitio a {
@@ -93,7 +100,6 @@ footer {
     align-items: center;
     gap: 15px;
 }
-
 
 .legales {
     display: flex;
