@@ -8,6 +8,7 @@
     text-decoration: none;
     font-family: "montserrat";
     list-style: none;
+    box-sizing: border-box;
 }
 
 .botonera {
@@ -54,10 +55,56 @@ h4:hover {
     color: #A0B210;
 }
 
+main {
+    padding: 0px 120px;
+}
+
+/* novedades */
+
+h6 {
+    color: #285B4C;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 10px 0px;;
+}
+
+.contenedores {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px
+}
+
+.cont-izq {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6EDD9;
+    border-radius: 5px 5px 5px 100px;
+    box-sizing: border-box;
+    padding: 40px 40px 50px 40px;
+}
+
+.cont-centro {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6EDD9;
+    padding: 40px 40px 50px 40px;
+    border-radius: 5px 5px 100px 100px;
+}
+
+.cont-der {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6EDD9;
+    padding: 40px 40px 50px 40px;
+    border-radius: 5px 5px 100px 5px;
+}
+
 p {
     font-size: 1em;
     color: #285B4C;
     font-weight: 400;
+    line-height: 1.5em;
 }
 
 footer {
