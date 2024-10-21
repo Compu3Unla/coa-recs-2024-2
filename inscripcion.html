@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>coarecs-g4</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header> <!-- Empiezo con header y footer asi puedo adelantar algo-->
+            <nav class= "botonera">
+                <img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo">
+                <ul>
+                    <li><a href= "sobrenosotros.html">Sobre nosotros</a></li>
+                    <li><a href="visitalarecs.html">Visitá la reserva</a></li>
+                    <li><a href="inscripcion.html">Quiero ser COA</a></li>
+                </ul>
+                <img src="img/svg/advertencias.svg" width="50px" height="50px" alt="advertencia"> <!--genere una nueva carpeta en IMG que se llama "svg"-->
+            </nav>                
+        </header>
+    <!--FORM COA RECS-->
+    <main>
+        <h2 class="formularioh2">Formulario de inscripción</h2>
+        <form class="form">
+            <div class="form-nombreydoc1">
+                <label for="ingresanombre" class="form-nombrecasillero">Nombre y apellido*</label>
+                <input type="nombreyapellido" class="form-control" id="ingresatunombre" aria-describedby="escribenombreyapellido">
+                <label for="ingresadocumento" class="form-nombrecasillero">Número de documento*</label>
+                <input type="documento" class="form-control" id="ingresadocumento" aria-describedby="escribetudocumento">
+            </div>
+            <div class="form-avesargentinas1">
+                <label for="avesargentinas" class="form-nombrecasillero">Si pertenece a "Aves Argentinas", especifique número de socio. Si no pertenece, dejar espacio vacío. N° de socio de "Aves Argentinas":</label>
+                <input type="numerosocio" class="form-control" id="avesargentinas" aria-describedby="escribenumerodesocio">
+            </div>
+            <div class="form-ingresadireccion1">
+                <label for="ingresadireccion" class="form-nombrecasillero">Dirección*</label>
+                <input type="direccion" class="form-control" id="ingresadireccion" aria-describedby="ingresatudirección">
+                <label for="ingresatelefono" class="form-nombrecasillero">Número de teléfono*</label>
+                <input type="telefono" class="form-control" id="ingresatelefono" aria-describedby="ingresatutelefono">
+            </div>
+            <div class="form-fotografia1">
+                <label for="ingresafotografia" class="form-nombrecasillero">¿Hace cuantos años que observas o fotografías aves?</label>
+                <input type="fotografia" class="form-control" id="ingresafotografia" aria-describedby="ingresaañossobrefotografia">
+            </div>
+            <div class="form-conocecoa1">
+                <label for="ingresaconocescoa" class="form-nombrecasillero">¿Conoces algún integrante del CoaRECS o de Aves Argentinas?</label>
+                <input type="conoces" class="form-control" id="ingresaconocescoa" aria-describedby="ingresaconocesalguncoa">
+            </div>
+            <button type="enviarmensaje" class="boton-enviar-form">Enviar</button>
+        </form>
+    </main>
+    </body>
+</html>
