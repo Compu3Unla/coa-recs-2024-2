@@ -7,6 +7,36 @@
     padding:0;
     text-decoration: none;
     font-family: "montserrat";
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.botonera {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #F6EDD9;
+    padding: 20px 120px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.botonera ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+
+.botonera a {
+    border-radius: 25px;
+    background-color: #285B4C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #F6EDD9;
+    padding: 10px 15px;
+}
+
+.botonera a:hover {
+    background-color:#A0B210;
 }
 
 h1 {
@@ -25,29 +55,104 @@ h4:hover {
     color: #A0B210;
 }
 
+main {
+    padding: 0px 120px;
+}
+
+/* novedades */
+
+h6 {
+    color: #285B4C;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 10px 0px;;
+}
+
+.contenedores {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 40px
+}
+
+.cont-izq {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6EDD9;
+    border-radius: 5px 5px 5px 100px;
+    box-sizing: border-box;
+    padding: 40px 40px 50px 40px;
+}
+
+.cont-centro {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6EDD9;
+    padding: 40px 40px 50px 40px;
+    border-radius: 5px 5px 100px 100px;
+}
+
+.cont-der {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6EDD9;
+    padding: 40px 40px 50px 40px;
+    border-radius: 5px 5px 100px 5px;
+}
+
 p {
     font-size: 1em;
     color: #285B4C;
     font-weight: 400;
+    line-height: 1.5em;
 }
 
-.botonera {
+footer {
     display: flex;
     width: 100%;
-    background-color: #F6EDD9;
-    padding: 20px 120px;
+    background-color: #285B4C;
     justify-content: space-between;
+    padding: 50px 120px;
     align-items: center;
+    box-sizing: border-box;
 }
 
-.html {
-    border-radius: 25px;
-    background-color: #285B4C;
-    box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+.redes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.redes p {
     color: #F6EDD9;
 }
 
-.html:hover{
-    background-color: #A0B210;
-    color: #285B4C;
+.mapasitio a {
+    color: #F6EDD9;
+}
+
+.mapasitio a:hover {
+    color:#A0B210
+}
+
+.mapasitio ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.mapasitio ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.legales {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    font-size: 0.9em;
+    color:#F6EDD9;
+    font-weight: 400;
 }

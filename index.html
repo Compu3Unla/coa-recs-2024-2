@@ -6,18 +6,50 @@
         <link href="estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <header>
-            <nav>
-                <p>NAV</p>
-            </nav>
+        <header> <!-- Empiezo con header y footer asi puedo adelantar algo-->
+            <nav class= "botonera">
+                <img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo">
+                <ul>
+                    <li><a href= "sobrenosotros.html">Sobre nosotros</a></li>
+                    <li><a href="visita-la-recs.html">Visitá la reserva</a></li>
+                    <li><a href="inscripcion.html">Quiero ser COA</a></li>
+                </ul>
+                <img src="img/svg/advertencias.svg" width="50px" height="50px" alt="advertencia"> <!--genere una nueva carpeta en IMG que se llama "svg"-->
+            </nav>                
         </header>
         <main>
-            <p>MAIN</p>
+            <p>slider</p>
+            <div>
+                <h1>Novedades</h1>
+                <div class="contenedores">
+                    <div class="cont-izq">
+                        <img src="img/index/laguna.jpg">
+                        <h6>La Ciudad recuperó  la Laguna de los Patos en la Reserva Ecológica Costanera Sur</h6>
+                        <p>Se realizó una obra de regeneración ambiental para revertir los efectos de las sequías registradas desde 2008, ocasionadas por el fenómeno de La Niña.
+                        La Laguna de los Patos se encuentra a metros del Centro de Interpretación y ocupa tres hectáreas</p>
+                    </div>
+                    <div class="cont-centro">
+                        <img src="img/index/lechuzas.jpg">
+                        <h6>Se liberaron dos lechuzas</h6>
+                        <p>
+                            Habían sido rescatadas y cuidadas en elCentro de Rescate de Fauna Silvestre dentro de la Reserva Ecológica Costanera Sur. Ingresaron  con tres semanas de vida.                          
+                        </p>
+                    </div>
+                    <div class="cont-der">
+                        <img src="img/index/pasarelas-nov.jpg" alt="pasarelas de novedades">
+                        <h6>Nuevo acceso a la Reserva Ecológica</h6>
+                        <p>
+                            La nueva entrada en la calle Viamonte es más amplia y tiene mejores instalaciones.
+                            El nuevo acceso está al lado de la entrada ubicada en la intersección de la calle Mariquita Sánchez de Thompson  y la avenida Giralt, proximidad cercana a Puerto Madero  más utilizada por los visitantes.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
             <div>
-                <img src="img/svg/logogeneral.svg" width= 563px height= 250px alt= logo+titulo>
-                <ul>
+                <img src="img/svg/logogeneral.svg" width="415px" height="186px" alt="logo+titulo">
+                <ul class="legales">
                     <li>©2024 COARECS</li>
                     <li>Políticas de privacidad</li>
                     <li>Avisos legales</li>
@@ -33,9 +65,9 @@
                 </ul>            
             </div>
             <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.866986592482!2d-58.354782323360894!3d-34.60752485770075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3351f97fbdf97%3A0xc0a4d539dc2254f!2sReserva%20Ecol%C3%B3gica%20Costanera%20Sur!5e0!3m2!1ses-419!2sar!4v1729278855101!5m2!1ses-419!2sar" width="600px" height="240px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div>
-                    <h4>Seguinos en redes:</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.866986592482!2d-58.354782323360894!3d-34.60752485770075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3351f97fbdf97%3A0xc0a4d539dc2254f!2sReserva%20Ecol%C3%B3gica%20Costanera%20Sur!5e0!3m2!1ses-419!2sar!4v1729278855101!5m2!1ses-419!2sar" width="550px" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="redes">
+                    <p>Seguinos en redes:</p>
                     <a href="https://www.instagram.com/coarecs/" target="_blank"><img src="img/svg/ig.svg" alt="instagram"></a>
                     <a href="mantenimiento.html"><img src="img/svg/x.svg" alt="tw"></a>
                     <a href="mantenimiento.html"><img src="img/svg/youtube.svg" alt="youtube"></a>
