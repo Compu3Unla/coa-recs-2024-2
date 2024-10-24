@@ -18,7 +18,6 @@
     background-color: #F6EDD9;
     padding: 20px 120px;
     align-items: center;
-    box-sizing: border-box;
 }
 
 .botonera ul {
@@ -61,7 +60,7 @@ h4:hover {
 
 /* novedades */
 .nov{
-    padding: 0px 120px;
+    margin: 0px 120px;
 }
 
 h2 {
@@ -101,6 +100,24 @@ h2 {
     background-color: #F6EDD9;
     padding: 40px 40px 50px 40px;
     border-radius: 5px 5px 100px 5px;
+}
+
+.imgnov{
+    width: 100%;
+    height: 276px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#lagunaseca{
+    background-image: url(img/index/laguna.jpg);
+    
+}
+#lechuzas{
+    background-image: url(img/index/lechuzas.jpg);
+}
+#newentrada{
+    background-image: url(img/index/pasarelas-nov.jpg);
 }
 
 p {
@@ -170,7 +187,7 @@ h3 {
     grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
     grid-column-gap: 40px;
     text-align: center;
-    padding: 50px 120px 50px 120px;
+    margin: 50px 120px 50px 120px;
 }
 
 .grid-pasarelas, .historia, .grid-pajaros, .grid-fotog {
@@ -233,11 +250,12 @@ h3 {
 
 .frase {
     background-image: url("./img/index/frase.jpg");
+    min-height: 960px;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
-    padding: 435px;
+    align-items: center;
 }
 
 .frase h3 {

@@ -2,11 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>coarecs-g4</title>
+        <title>COARECS</title>
         <link href="estilos.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <header> <!-- Empiezo con header y footer asi puedo adelantar algo-->
+        <header>
             <nav class= "botonera">
                 <img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo">
                 <ul>
@@ -14,30 +14,35 @@
                     <li><a href="visitalarecs.html">Visitá la reserva</a></li>
                     <li><a href="inscripcion.html">Quiero ser COA</a></li>
                 </ul>
-                <img src="img/svg/advertencias.svg" width="50px" height="50px" alt="advertencia"> <!--genere una nueva carpeta en IMG que se llama "svg"-->
+                <img src="img/svg/advertencias.svg" width="50px" height="50px" alt="advertencia">
             </nav>                
         </header>
         <main>
             <section>
                 <p>slider</p>
+
+                <!--Novedades-->
                 <div class="nov">
                     <h1>Novedades</h1>
                     <div class="contenedores">
                         <div class="cont-izq">
-                            <img src="img/index/laguna.jpg" width="525px" height="276px" alt="laguna seca">
+                            <!--<img src="img/index/laguna.jpg" width="525px" height="276px" alt="laguna seca">-->
+                            <div class="imgnov" id="lagunaseca"></div>
                             <h2>La Ciudad recuperó  la Laguna de los Patos en la Reserva Ecológica Costanera Sur</h2>
                             <p>Se realizó una obra de regeneración ambiental para revertir los efectos de las sequías registradas desde 2008, ocasionadas por el fenómeno de La Niña.
                             La Laguna de los Patos se encuentra a metros del Centro de Interpretación y ocupa tres hectáreas</p>
                         </div>
                         <div class="cont-centro">
-                            <img src="img/index/lechuzas.jpg" width="310px" height="276px" alt="chica con lechuza">
+                            <!--<img src="img/index/lechuzas.jpg" width="310px" height="276px" alt="chica con lechuza">-->
+                            <div class="imgnov" id="lechuzas"></div>
                             <h2>Se liberaron dos lechuzas</h2>
                             <p>
                                 Habían sido rescatadas y cuidadas en elCentro de Rescate de Fauna Silvestre dentro de la Reserva Ecológica Costanera Sur. Ingresaron  con tres semanas de vida.                          
                             </p>
                         </div>
                         <div class="cont-der">
-                            <img src="img/index/pasarelas-nov.jpg" width="525px" height="314px" alt="pasarelas de novedades">
+                            <!--<img src="img/index/pasarelas-nov.jpg" width="525px" height="314px" alt="pasarelas de novedades">-->
+                            <div class="imgnov" id="newentrada"></div>
                             <h2>Nuevo acceso a la Reserva Ecológica</h2>
                             <p>
                                 La nueva entrada en la calle Viamonte es más amplia y tiene mejores instalaciones.
@@ -47,6 +52,21 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Catalogo -->
+            <section>
+                <h1>Guía de aves</h1>
+                <div>
+                    <div>
+                        <img src="img/cards-pajaros/pato-capuchino.jpg">
+
+                    </div>
+                </div>
+                <p>Ver más</p>
+            </section>
+
+            <!--Preguntas-->
+
 
             <!-- datos -->
             <section class="grid">
@@ -60,10 +80,13 @@
                 <article class="grid-fotog"><h3>72</h3><p>Fotógrafos</p></article>
             </section>
 
+            <!-- img + frase -->
             <section class="frase">
                 <h3>Junto a vos, protegemos nuestras<br>aves silvestres y la naturaleza</h3>
             </section>
         </main>
+
+        <!--Pie de pagina-->
         <footer>
             <div>
                 <img src="img/svg/logogeneral.svg" width="415px" height="186px" alt="logo+titulo">
