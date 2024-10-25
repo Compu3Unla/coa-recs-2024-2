@@ -11,6 +11,7 @@
     box-sizing: border-box;
 }
 
+/*botonera*/
 .botonera {
     display: flex;
     justify-content: space-between;
@@ -38,6 +39,7 @@
     background-color:#A0B210;
 }
 
+/* estilos de H */
 h1 {
     font-size: 2em;
     color: #285B4C;
@@ -54,20 +56,20 @@ h4:hover {
     color: #A0B210;
 }
 
-/*main {
-    padding: 0px 120px;
-}*/
-
-/* novedades */
-.nov{
-    margin: 0px 120px;
-}
-
 h2 {
     color: #285B4C;
     font-weight: 600;
     font-size: 1em;
     padding: 10px 0px;;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+/* novedades */
+.nov{
+    margin: 0px 120px;
 }
 
 .contenedores {
@@ -127,7 +129,74 @@ p {
     line-height: 1.5em;
 }
 
-footer {
+/*guia de aves*/
+.section-guia{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 120px;
+    gap: 20px;
+}
+.section-guia p {
+    display: flex;
+    justify-content: center;
+    background-color: #285B4C;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #F6EDD9;
+    padding: 10px 15px;
+    max-width: 175px;
+}
+
+.section-guia p:hover {
+    background-color: #A0B210;
+    color: #285B4C;
+}
+
+.guiadeaves{
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalogo {
+    max-width: 390px;
+    height: 516px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 95px 40px 30px 40px;
+    color: #285B4C;
+    font-weight: 600;
+}
+.nombre-pajaro{
+    display: flex;
+    background-color: #285B4C;
+    border-radius: 0px 50px 0px 5px;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+.nombre-pajaro h2 {
+    color: #F6EDD9;
+}
+
+#patocapuchino {
+    background-image: url(img/cards-pajaros/pato-capuchino.jpg);
+    border-radius: 100px 5px 50px 0px;
+}
+#colibri {
+    background-image: url(img/cards-pajaros/colibri-verde.jpg);
+    border-radius: 100px 5px 50px 0px;
+}
+#hornero{
+    background-image: url(img/cards-pajaros/hornero.jpg);
+    border-radius: 100px 5px 50px 0px;
+}
+#benteveo{
+    background-image: url(img/cards-pajaros/benteveo.jpg);
+    border-radius: 100px 5px 50px 0px;
+}
+
+
+/* foter*/
+footer{
     display: flex;
     width: 100%;
     background-color: #285B4C;
@@ -178,10 +247,6 @@ footer {
 }
 
 /*datos-grid*/
-h3 {
-    font-size: 3em;
-}
-
 .grid {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
