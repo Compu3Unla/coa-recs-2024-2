@@ -54,9 +54,6 @@ h4:hover {
     color: #A0B210;
 }
 
-main {
-    padding: 0px 120px;
-}
 
 /* novedades */
 
@@ -158,12 +155,13 @@ footer {
 /* la-reserva*/
 
 .pastilla-slider {
-    width: 500px;
+    width: 570px;
     height: 120px;
     background-color: rgba(40, 91, 76, 0.50);
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
     gap: 5px;
+    padding-left: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,6 +176,7 @@ footer {
     color: white;
     position: absolute;
     bottom: 10px;
+    padding-left: 120px;
 }
 
 .pastilla-slider p {
@@ -193,23 +192,29 @@ video {
 }
 
 .ubicacion-recs {
-    width: 750px;
+    width: 820px;
     height: 130px;
     background-color: #F6EDD9;
     border-bottom-right-radius: 100px;
     display: flex;
-    padding: 5px 5px 5px 0px;
+    padding: 5px 50px 5px 120px;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
 }
 
-h2 {
+.secciones-ubicacion h2 {
+    padding-left: 120px;
     color: #285B4C;
 }
 
-.secciones-ubicacion , .mapa-recs {
+.secciones-ubicacion , .mapa-recs , .secciones-circuitos , .secciones-consejos , .secciones-recomendaciones {
     padding: 60px 0px;
+}
+
+.mapa-recs {
+    display: flex;
+    justify-content: center;
 }
 
 .circuitos {
@@ -218,13 +223,19 @@ h2 {
 }
 
 .secciones-circuitos {
+    padding: 120px;
     display: flex;
     flex-direction: column;
 }
 
+.secciones-circuitos h2 {
+    color: #285B4C;
+}
+
 .contenedor-circuitos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 15px;
 }
 
 .item-circuitos {
@@ -235,7 +246,103 @@ h2 {
 
 .info-circuitos {
     background-color: #F6EDD9;
-    padding: 15px 20px;
+    padding: 25px 15px 15px 15px;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
+}
+
+.circuitos h3 {
+    color: #F6EDD9;
+    background-color: #285B4C;
+    border-radius: 25px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    position: relative;
+    bottom: -15px;
+}
+
+.secciones-consejos {
+    background-image: url('img/la-reserva/fondo-onda-verde.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 120px;
+}
+
+.secciones-consejos h2 {
+    color: #F6EDD9;
+}
+
+.secciones-consejos ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secciones-consejos h3 {
+    color: #F6EDD9;
+    margin-top: 25px;
+}
+
+.secciones-consejos li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.secciones-recomendaciones {
+    display: flex;
+    flex-direction: column;
+    padding-right: 120px;
+}
+
+.contenedor-recomendaciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.secciones-recomendaciones h2 {
+    color: #285B4C;
+    padding-left: 120px;
+}
+
+.secciones-recomendaciones li {
+    color: #285B4C;
+    list-style: disc;
+    list-style-position: inside;
+    line-height: 1.7em
+}
+
+.recomendaciones {
+    background-color: #F6EDD9;
+    width: 750px;
+    height: 300px;
+    border-bottom-right-radius: 100px;
+    padding: 5px 50px 5px 120px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.botones-recomendaciones a {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #285B4C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #F6EDD9;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+.botones-recomendaciones a:hover {
+    background-color: #A0B210;
 }
