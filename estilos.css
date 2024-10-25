@@ -11,6 +11,7 @@
     box-sizing: border-box;
 }
 
+/*botonera*/
 .botonera {
     display: flex;
     justify-content: space-between;
@@ -18,12 +19,10 @@
     background-color: #F6EDD9;
     padding: 20px 120px;
     align-items: center;
-    box-sizing: border-box;
 }
 
 .botonera ul {
     display: flex;
-    list-style: none;
     gap: 60px;
 }
 
@@ -39,8 +38,9 @@
     background-color:#A0B210;
 }
 
+/* estilos de H */
 h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #285B4C;
     font-weight: 700;
 }
@@ -55,49 +55,51 @@ h4:hover {
     color: #A0B210;
 }
 
-main {
-    padding: 0px 120px;
-}
-
-/* novedades */
-
-h6 {
+h2 {
     color: #285B4C;
     font-weight: 600;
     font-size: 1em;
     padding: 10px 0px;;
 }
 
-.contenedores {
+h3 {
+    font-size: 3em;
+}
+
+/* novedades */
+.novedades{
+    margin: 0px 120px;
+}
+
+.nov-cont {
     display: flex;
     margin-top: 20px;
-    justify-content: center;
-    gap: 40px
+    gap: 40px;
+}
+
+.cont-izq, .cont-centro, .cont-der {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6EDD9;
+    padding: 40px 40px 50px 40px;
+    background-color: #F6EDD9;
 }
 
 .cont-izq {
-    display: flex;
-    flex-direction: column;
-    background-color: #F6EDD9;
     border-radius: 5px 5px 5px 100px;
-    box-sizing: border-box;
-    padding: 40px 40px 50px 40px;
 }
 
 .cont-centro {
-    display: flex;
-    flex-direction: column;
-    background-color: #F6EDD9;
-    padding: 40px 40px 50px 40px;
     border-radius: 5px 5px 100px 100px;
 }
 
 .cont-der {
-    display: flex;
-    flex-direction: column;
-    background-color: #F6EDD9;
-    padding: 40px 40px 50px 40px;
     border-radius: 5px 5px 100px 5px;
+}
+
+.nov-cont-img {
+    width: 100%;
+    height: auto;
 }
 
 p {
@@ -107,7 +109,75 @@ p {
     line-height: 1.5em;
 }
 
-footer {
+/*guia de aves*/
+.section-guia{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 120px;
+    gap: 20px;
+}
+.section-guia a {
+    display: flex;
+    justify-content: center;
+    background-color: #285B4C;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #F6EDD9;
+    padding: 10px 15px;
+    max-width: 175px;
+}
+
+.section-guia p:hover {
+    background-color: #A0B210;
+    color: #285B4C;
+}
+
+.guiadeaves{
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalogo {
+    max-width: 390px;
+    height: 516px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 95px 40px 30px 40px;
+    color: #285B4C;
+    font-weight: 600;
+}
+.nombre-pajaro{
+    display: flex;
+    background-color: #285B4C;
+    border-radius: 0px 50px 0px 5px;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+.nombre-pajaro h2 {
+    color: #F6EDD9;
+}
+
+#patocapuchino {
+    background-image: url(img/cards-pajaros/pato-capuchino.jpg);
+    border-radius: 100px 5px 50px 0px;
+}
+#colibri {
+    background-image: url(img/cards-pajaros/colibri-verde.jpg);
+    border-radius: 100px 5px 50px 0px;
+}
+#hornero{
+    background-image: url(img/cards-pajaros/hornero.jpg);
+    border-radius: 100px 5px 50px 0px;
+}
+#benteveo{
+    background-image: url(img/cards-pajaros/benteveo.jpg);
+    border-radius: 100px 5px 50px 0px;
+}
+
+/*preguntas*/
+
+/* foter*/
+footer{
     display: flex;
     width: 100%;
     background-color: #285B4C;
@@ -155,4 +225,95 @@ footer {
     font-size: 0.9em;
     color:#F6EDD9;
     font-weight: 400;
+}
+
+/*datos-grid*/
+.grid {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    text-align: center;
+    margin: 50px 120px 50px 120px;
+}
+
+.grid-pasarelas, .historia, .grid-pajaros, .grid-fotog {
+    background-color: #285B4C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.grid-pasarelas h3, .grid-pasarelas p, .grid-fotog h3, .grid-fotog p {
+    color: #F6EDD9;
+}
+
+.grid-pasarelas, .grid-fotog {
+    background-color: #285B4C;
+}
+
+.historia, .grid-pajaros{
+    background-color: #F6EDD9;
+}
+.historia h3, .historia p, .grid-pajaros h3, .grid-pajaros p {
+    color: #285B4C;
+}
+
+.grid-pasarelas {
+    border-radius: 5px 5px 100px 0px;
+}
+
+.historia {
+    border-radius: 5px 5px 0px 100px;
+}
+
+.grid-pajaros {
+    border-radius: 100px 0px 100px 5px;
+}
+
+.grid-fotog {
+    border-radius: 0px 100px 5px 100px;
+}
+
+.img-1 {
+    border-radius: 0px 100px 5px 5px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.img-2 {
+    border-radius: 100px 0px 5px 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-3 {
+    border-radius: 100px 100px 0px 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-4 {
+    border-radius: 100px 100px 100px 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+/*frase*/
+
+.frase {
+    background-image: url("./img/index/frase.jpg");
+    min-height: 960px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase h3 {
+    color: #285B4C;
+    text-align: center;
 }
