@@ -55,14 +55,11 @@ h4:hover {
     color: #A0B210;
 }
 
-
-/* novedades */
-
 h2 {
     color: #285B4C;
     font-weight: 600;
     font-size: 1em;
-    padding: 10px 0px;;
+    padding: 10px 0px;
 }
 
 h3 {
@@ -351,7 +348,7 @@ footer{
     color: white;
 }
 
-.pastilla-slider h2 {
+.pastilla-slider h1 {
     color: white;
 }
 
@@ -371,9 +368,8 @@ video {
     margin-top: 15px;
 }
 
-.secciones-ubicacion h2 {
+.secciones-ubicacion h1 {
     padding-left: 120px;
-    color: #285B4C;
 }
 
 .secciones-ubicacion , .mapa-recs , .secciones-circuitos , .secciones-consejos , .secciones-recomendaciones {
@@ -396,10 +392,6 @@ video {
     flex-direction: column;
 }
 
-.secciones-circuitos h2 {
-    color: #285B4C;
-}
-
 .contenedor-circuitos {
     display: flex;
     justify-content: space-between;
@@ -419,7 +411,7 @@ video {
     border-bottom-left-radius: 25px;
 }
 
-.circuitos h3 {
+.circuitos h2 {
     color: #F6EDD9;
     background-color: #285B4C;
     border-radius: 25px;
@@ -439,7 +431,7 @@ video {
     padding: 120px;
 }
 
-.secciones-consejos h2 {
+.secciones-consejos h1 {
     color: #F6EDD9;
 }
 
@@ -448,7 +440,7 @@ video {
     justify-content: space-between;
 }
 
-.secciones-consejos h3 {
+.secciones-consejos h2 {
     color: #F6EDD9;
     margin-top: 25px;
 }
@@ -472,8 +464,7 @@ video {
     align-items: end;
 }
 
-.secciones-recomendaciones h2 {
-    color: #285B4C;
+.secciones-recomendaciones h1 {
     padding-left: 120px;
 }
 
