@@ -23,7 +23,6 @@
 
 .botonera ul {
     display: flex;
-    list-style: none;
     gap: 60px;
 }
 
@@ -68,58 +67,39 @@ h3 {
 }
 
 /* novedades */
-.nov{
+.novedades{
     margin: 0px 120px;
 }
 
-.contenedores {
+.nov-cont {
     display: flex;
     margin-top: 20px;
-    justify-content: center;
     gap: 40px;
 }
 
-.cont-izq {
+.cont-izq, .cont-centro, .cont-der {
     display: flex;
     flex-direction: column;
     background-color: #F6EDD9;
-    border-radius: 5px 5px 5px 100px;
-    box-sizing: border-box;
     padding: 40px 40px 50px 40px;
+    background-color: #F6EDD9;
+}
+
+.cont-izq {
+    border-radius: 5px 5px 5px 100px;
 }
 
 .cont-centro {
-    display: flex;
-    flex-direction: column;
-    background-color: #F6EDD9;
-    padding: 40px 40px 50px 40px;
     border-radius: 5px 5px 100px 100px;
 }
 
 .cont-der {
-    display: flex;
-    flex-direction: column;
-    background-color: #F6EDD9;
-    padding: 40px 40px 50px 40px;
     border-radius: 5px 5px 100px 5px;
 }
 
-.imgnov{
+.nov-cont-img {
     width: 100%;
-    height: 276px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#lagunaseca{
-    background-image: url(img/index/laguna.jpg);
-    
-}
-#lechuzas{
-    background-image: url(img/index/lechuzas.jpg);
-}
-#newentrada{
-    background-image: url(img/index/pasarelas-nov.jpg);
+    height: auto;
 }
 
 p {
@@ -136,7 +116,7 @@ p {
     margin: 0px 120px;
     gap: 20px;
 }
-.section-guia p {
+.section-guia a {
     display: flex;
     justify-content: center;
     background-color: #285B4C;
@@ -194,6 +174,7 @@ p {
     border-radius: 100px 5px 50px 0px;
 }
 
+/*preguntas*/
 
 /* foter*/
 footer{
@@ -261,7 +242,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .grid-pasarelas h3, .grid-pasarelas p, .grid-fotog h3, .grid-fotog p {
@@ -297,18 +278,27 @@ footer{
 
 .img-1 {
     border-radius: 0px 100px 5px 5px;
+    max-width: 100%;
+    height: auto;
+
 }
 
 .img-2 {
     border-radius: 100px 0px 5px 5px;
+    max-width: 100%;
+    height: auto;
 }
 
 .img-3 {
     border-radius: 100px 100px 0px 100px;
+    max-width: 100%;
+    height: auto;
 }
 
 .img-4 {
     border-radius: 100px 100px 100px 0px;
+    max-width: 100%;
+    height: auto;
 }
 
 /*frase*/
