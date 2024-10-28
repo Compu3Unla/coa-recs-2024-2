@@ -59,7 +59,7 @@ h2 {
     color: #285B4C;
     font-weight: 600;
     font-size: 1em;
-    padding: 10px 0px;;
+    padding: 10px 0px;
 }
 
 h3 {
@@ -184,7 +184,6 @@ footer{
     justify-content: space-between;
     padding: 50px 120px;
     align-items: center;
-    box-sizing: border-box;
 }
 
 .redes {
@@ -316,4 +315,193 @@ footer{
 .frase h3 {
     color: #285B4C;
     text-align: center;
+}
+
+/* la-reserva*/
+
+.pastilla-slider {
+    width: 570px;
+    height: 120px;
+    background-color: rgba(40, 91, 76, 0.50);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    gap: 5px;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 40px;
+}
+
+.bajada-slider {
+    font-style: italic;
+    font-size: 0.8em;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    padding-left: 120px;
+}
+
+.pastilla-slider p {
+    color: white;
+}
+
+.pastilla-slider h1 {
+    color: white;
+}
+
+video {
+    border-bottom-right-radius: 400px;
+}
+
+.ubicacion-recs {
+    width: 820px;
+    height: 130px;
+    background-color: #F6EDD9;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    padding: 5px 50px 5px 120px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.secciones-ubicacion h1 {
+    padding-left: 120px;
+}
+
+.secciones-ubicacion , .mapa-recs , .secciones-circuitos , .secciones-consejos , .secciones-recomendaciones {
+    padding: 60px 0px;
+}
+
+.mapa-recs {
+    display: flex;
+    justify-content: center;
+}
+
+.circuitos {
+    display: flex;
+    flex-direction: column;
+}
+
+.secciones-circuitos {
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-circuitos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.item-circuitos {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.info-circuitos {
+    background-color: #F6EDD9;
+    padding: 25px 15px 15px 15px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.circuitos h2 {
+    color: #F6EDD9;
+    background-color: #285B4C;
+    border-radius: 25px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    position: relative;
+    bottom: -15px;
+}
+
+.secciones-consejos {
+    background-image: url('img/la-reserva/fondo-onda-verde.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 120px;
+}
+
+.secciones-consejos h1 {
+    color: #F6EDD9;
+}
+
+.secciones-consejos ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secciones-consejos h2 {
+    color: #F6EDD9;
+    margin-top: 25px;
+}
+
+.secciones-consejos li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.secciones-recomendaciones {
+    display: flex;
+    flex-direction: column;
+    padding-right: 120px;
+}
+
+.contenedor-recomendaciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.secciones-recomendaciones h1 {
+    padding-left: 120px;
+}
+
+.secciones-recomendaciones li {
+    color: #285B4C;
+    list-style: disc;
+    list-style-position: inside;
+    line-height: 1.7em
+}
+
+.recomendaciones {
+    background-color: #F6EDD9;
+    width: 750px;
+    height: 300px;
+    border-bottom-right-radius: 100px;
+    padding: 5px 50px 5px 120px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.botones-recomendaciones a {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #285B4C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #F6EDD9;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+.botones-recomendaciones a:hover {
+    background-color: #A0B210;
 }

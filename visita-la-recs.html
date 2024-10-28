@@ -7,7 +7,7 @@
     </head>
     
     <body>
-        <header> <!-- Empiezo con header y footer asi puedo adelantar algo-->
+        <header>
             <nav class= "botonera">
                 <img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo">
                 <ul>
@@ -15,127 +15,152 @@
                     <li><a href="visitalarecs.html">Visitá la reserva</a></li>
                     <li><a href="inscripcion.html">Quiero ser COA</a></li>
                 </ul>
-                <img src="img/svg/advertencias.svg" width="50px" height="50px" alt="advertencia"> <!--genere una nueva carpeta en IMG que se llama "svg"-->
+                <img src="img/svg/advertencias.svg" width="50px" height="50px" alt="advertencia"> 
             </nav>                
         </header>
 
         <main>
             <section>
-                <h2>Ubicación</h2>
-                <p>La reserva está en el barrio de Puerto Madero, a 30 min a pie del centro de Buenos Aires. Cuenta con dos accesos: Norte (altura calle Viamonte) y Sur (altura calle Brasil, junto a la famosa fuente de Lola Mora).</p>
+                <video width="100%" height="auto" autoplay loop muted>
+                    <source src="img\slider\recs\video-coarecs.mp4" type="video/mp4">
+                </video>
+                <div class="texto-slider">
+                    <div class="pastilla-slider">
+                        <h1>Reserva Ecológica Costanera Sur</h1>
+                        <p>Ciudad Autónoma de Buenos Aires</p>
+                    </div>
+                    <p class="bajada-slider">Vista Aérea de la RECS</p>
+                </div>
             </section>
-            <section class="recs">
+
+            <section class="secciones-ubicacion">
+                <h1>Ubicación</h1>
+                <div class="ubicacion-recs">
+                    <p>La reserva está en el barrio de Puerto Madero, a 30 min a pie del centro de Buenos Aires.<br>Cuenta con dos accesos: Norte (altura calle Viamonte) y Sur (altura calle Brasil, junto a la famosa fuente de Lola Mora).</p>
+                </div>
+            </section>
+
+            <section class="mapa-recs">
                 <img src="img\la-reserva\mapa-general.png" width="1160px" height="766px" alt="Mapa de la Reserva Ecológica Costanera Sur">
             </section>
 
-            <section>
-                <h2>Circuitos</h2>
-                <div class="circuito">
-                    <img src="img\la-reserva\circuito-humedales.svg" width="290px" height="153px" alt="Mapa del Circuito de los Humedales de la RECS">
-                    <h3>Circuito de los Humedales</h3>
-                    <ul>
-                        <li>
-                            <img src="img\la-reserva\icono-persona.svg" width="11px" height="21px" alt="Icono que muestra una persona caminando">
-                            <p>2,2 km.</p>
-                        </li>
-                        <li>
-                            <img src="img\la-reserva\icono-reloj.svg" width="15px" height="15px" alt="Icono que muestra un reloj">
-                            <p>45' a pie</p>
-                        </li>
-                        <li>
-                            <p>Dificultad: Baja</p>
-                        </li>
-                    </ul>
+            <section class="secciones-circuitos">
+                    <h1>Circuitos</h1>
+                <div class="contenedor-circuitos">
+                    <div class="circuitos">
+                        <img src="img\la-reserva\circuito-humedales.svg" width="290px" height="153px" alt="Mapa del Circuito de los Humedales de la RECS">
+                        <h2>Circuito de los Humedales</h2>
+                        <ul class="info-circuitos">
+                            <li class="item-circuitos">
+                                <img src="img\la-reserva\icono-persona.svg" width="11px" height="21px" alt="Icono que muestra una persona caminando">
+                                <p>2,2 km.</p>
+                            </li>
+                            <li class="item-circuitos">
+                                <img src="img\la-reserva\icono-reloj.svg" width="15px" height="15px" alt="Icono que muestra un reloj">
+                                <p>45' a pie</p>
+                            </li>
+                            <li>
+                                <p>Dificultad: Baja</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="circuitos">
+                        <img src="img\la-reserva\circuito-rio.svg" width="290px" height="153px" alt="Mapa del Circuito del Rio de la RECS">
+                        <h2>Circuito del Rio</h2>
+                        <ul class="info-circuitos">
+                            <li class="item-circuitos">
+                                <img src="img\la-reserva\icono-persona.svg" width="11px" height="21px" alt="Icono que muestra una persona caminando">
+                                <p>3,3 km.</p>
+                            </li>
+                            <li class="item-circuitos">
+                                <img src="img\la-reserva\icono-reloj.svg" width="15px" height="15px" alt="Icono que muestra un reloj">
+                                <p>1h 10' a pie</p>
+                            </li>
+                            <li>
+                                <p>Dificultad: Baja</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="circuitos">
+                        <img src="img\la-reserva\circuito-paisajes.svg" width="290px" height="153px" alt="Mapa del Circuito de los Paisajes de la RECS">
+                        <h2>Circuito de los Paisajes</h2>
+                        <ul class="info-circuitos">
+                            <li class="item-circuitos">
+                                <img src="img\la-reserva\icono-persona.svg" width="11px" height="21px" alt="Icono que muestra una persona caminando">
+                                <p>4,2 km.</p>
+                            </li>
+                            <li class="item-circuitos">
+                                <img src="img\la-reserva\icono-reloj.svg" width="15px" height="15px" alt="Icono que muestra un reloj">
+                                <p>1h 30' a pie</p>
+                            </li>
+                            <li>
+                                <p>Dificultad: Media</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="circuitos">
+                        <img src="img\la-reserva\circuito-grande.svg" width="290px" height="153px" alt="Mapa del Circuito Grande de la RECS">
+                        <h2>Circuito Grande</h2>
+                        <ul class="info-circuitos">
+                            <li class="item-circuitos">
+                                <img src="img\la-reserva\icono-persona.svg" width="11px" height="21px" alt="Icono que muestra una persona caminando">
+                                <p>7,9 km.</p>
+                            </li>
+                            <li class="item-circuitos">
+                                <img src="img\la-reserva\icono-reloj.svg" width="15px" height="15px" alt="Icono que muestra un reloj">
+                                <p>2h 40' a pie</p>
+                            </li>
+                            <li>
+                                <p>Dificultad: Media</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="circuito">
-                    <img src="img\la-reserva\circuito-rio.svg" width="290px" height="153px" alt="Mapa del Circuito del Rio de la RECS">
-                    <h3>Circuito del Rio</h3>
+            </section>
+
+            <section class="consejos">
+                <div class="secciones-consejos">
+                    <h1>Consejos para principiantes</h1>
                     <ul>
                         <li>
-                            <img src="img\la-reserva\icono-persona.svg" width="11px" height="21px" alt="Icono que muestra una persona caminando">
-                            <p>3,3 km.</p>
+                            <img src="img\la-reserva\binoculares.svg" width="227px" height="215px" alt="Ilustración de binoculares">
+                            <h2>Elegir los binoculares</h2>
                         </li>
                         <li>
-                            <img src="img\la-reserva\icono-reloj.svg" width="15px" height="15px" alt="Icono que muestra un reloj">
-                            <p>1h 10' a pie</p>
+                            <img src="img\la-reserva\pajarito.svg" width="227px" height="215px" alt="Ilustración de pajarito">
+                            <h2>Identificar las aves</h2>
                         </li>
                         <li>
-                            <p>Dificultad: Baja</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="circuito">
-                    <img src="img\la-reserva\circuito-paisajes.svg" width="290px" height="153px" alt="Mapa del Circuito de los Paisajes de la RECS">
-                    <h3>Circuito de los Paisajes</h3>
-                    <ul>
-                        <li>
-                            <img src="img\la-reserva\icono-persona.svg" width="11px" height="21px" alt="Icono que muestra una persona caminando">
-                            <p>4,2 km.</p>
+                            <img src="img\la-reserva\cuidado-ambiente.svg" width="227px" height="215px" alt="Ilustración de mano sosteniendo una hoja de arbol">
+                            <h2>Respetar el hábitat</h2>
                         </li>
                         <li>
-                            <img src="img\la-reserva\icono-reloj.svg" width="15px" height="15px" alt="Icono que muestra un reloj">
-                            <p>1h 30' a pie</p>
-                        </li>
-                        <li>
-                            <p>Dificultad: Media</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="circuito">
-                    <img src="img\la-reserva\circuito-grande.svg" width="290px" height="153px" alt="Mapa del Circuito Grande de la RECS">
-                    <h3>Circuito Grande</h3>
-                    <ul>
-                        <li>
-                            <img src="img\la-reserva\icono-persona.svg" width="11px" height="21px" alt="Icono que muestra una persona caminando">
-                            <p>7,9 km.</p>
-                        </li>
-                        <li>
-                            <img src="img\la-reserva\icono-reloj.svg" width="15px" height="15px" alt="Icono que muestra un reloj">
-                            <p>2h 40' a pie</p>
-                        </li>
-                        <li>
-                            <p>Dificultad: Media</p>
+                            <img src="img\la-reserva\checklist.svg" width="227px" height="215px" alt="Ilustración de checklist">
+                            <h2>Registrar observaciones</h2>
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <section>
-                <h2>Consejos para principiantes</h2>
-                <ul>
-                    <li>
-                        <img src="img\la-reserva\binoculares.svg" width="227px" height="215px" alt="Ilustración de binoculares">
-                        <h3>Elegir los binoculares</h3>
-                    </li>
-                    <li>
-                        <img src="img\la-reserva\pajarito.svg" width="227px" height="215px" alt="Ilustración de pajarito">
-                        <h3>Identificar las aves</h3>
-                    </li>
-                    <li>
-                        <img src="img\la-reserva\cuidado-ambiente.svg" width="227px" height="215px" alt="Ilustración de mano sosteniendo una hoja de arbol">
-                        <h3>Respetar el hábitat</h3>
-                    </li>
-                    <li>
-                        <img src="img\la-reserva\checklist.svg" width="227px" height="215px" alt="Ilustración de checklist">
-                        <h3>Registrar observaciones</h3>
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Recomendaciones y precauciones</h2>
-                <ul>
-                    <li>Respetá el itinerario del sendero, no te separes de los circuitos</li>
-                    <li>No alimentes ni molestes a los animales </li>
-                    <li>No arrojes residuos</li>
-                    <li>No se permite el ingreso con bicicletas </li>
-                    <li>Prohibido fumar y hacer fuego </li>
-                    <li>Prohibido hacer ruidos molestos </li>
-                    <li>Prohibido escribir y marcar las pasarelas </li>
-                    <li>Prohibido cazar y pescar </li>
-                    <li>La reserva no cuenta con agua corriente en sus recorridos, llevá hidratación.</li>
-                </ul>
-                <!-- faltan los botones -->
+            <section class="secciones-recomendaciones">
+                <h1>Recomendaciones y precauciones</h1>
+                <div class="contenedor-recomendaciones">
+                    <ul class="recomendaciones">
+                        <li>Respetá el itinerario del sendero, no te separes de los circuitos</li>
+                        <li>No alimentes ni molestes a los animales </li>
+                        <li>No arrojes residuos</li>
+                        <li>No se permite el ingreso con bicicletas </li>
+                        <li>Prohibido fumar y hacer fuego </li>
+                        <li>Prohibido hacer ruidos molestos </li>
+                        <li>Prohibido escribir y marcar las pasarelas </li>
+                        <li>Prohibido cazar y pescar </li>
+                        <li>La reserva no cuenta con agua corriente en sus recorridos, llevá hidratación.</li>
+                    </ul>
+                    <div class="botones-recomendaciones">
+                        <a href= "img\la-reserva\pdf\Checklist-de-aves-de-la-Reserva-Ecologica.pdf" target="_blank">Checklist</a>
+                        <a href="img\la-reserva\pdf\guia-reserva-ecologica.pdf" target="_blank">Guías de la Reserva</a>
+                    </div>
+                </div>
             </section>
 
         </main>
