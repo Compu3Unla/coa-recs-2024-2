@@ -176,7 +176,7 @@ p {
 
 /*preguntas*/
 
-/* foter*/
+/* footer*/
 footer{
     display: flex;
     width: 100%;
@@ -225,7 +225,7 @@ footer{
     color:#F6EDD9;
     font-weight: 400;
 }
-/*inicio de catálogo parajos*/
+/*----------------------------------------------------inicio de catálogo parajos*/
 .cardcontenedor{
     margin: 30px;
     display: flex;
@@ -298,7 +298,7 @@ footer{
     background-color: #285B4C;
     color: #F6EDD9;
 }
-/*boton audio*/
+/*------------------------------------------------------boton audio*/
 .toggleSwitch {
     width: 50px;
     height: 50px;
@@ -358,7 +358,7 @@ width: 18px;
 #checkboxInput:active + .toggleSwitch {
     transform: scale(0.7);
 }
-/*fin boton audio*/
+/*---------------------------------------------------------fin boton audio*/
 /*datos-grid*/
 .grid {
     display: grid;
