@@ -1075,6 +1075,87 @@ input {
     position: relative;
     bottom: -15px;
 }
+/*-----------------------------------------------------------FIN DE GALERIA*/
+.agradecer{
+    display: inline-flex;
+    margin: 50px;
+    padding: 28px 187px 58px 187px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 260px 10px 200px 10px;
+    background: #F6EDD9;
+}
+.agradecer h2{
+    font-size: 2em;
+}
+.agradecer p{
+    font-size: 1.2em;
+}
+.contenedor-agradecer{
+    display: flex;
+    justify-content: center;
+}
+/* ----------------------------------------------
+---------------------------------------------- */
+.contenedor-animacion {
+    position: relative;
+    width: 100px; /* Ajusta el tamaño según necesites */
+    height: 100px;
+}
+
+.bird-body {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    width: 100%;
+    height: auto;
+    animation: float 1s infinite ease-in-out;
+}
+
+.bird-wings {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    animation: flapping 0.5s infinite step-start; /* Alternancia de alas */
+}
+
+.wings-down {
+    z-index: 10;
+    animation-delay: 0s; /* Alas hacia abajo */
+}
+
+.wings-up {
+    z-index: 0;
+    animation-delay: 0.25s; /* Alas hacia arriba */
+    opacity: 0; /* Comienza invisible */
+}
+
+@keyframes flapping {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /* Ajusta la altura del vuelo */
+    }
+}
+.boton-volver{
+    margin: 20px;
+}
 
 
 
