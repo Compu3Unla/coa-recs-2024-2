@@ -282,8 +282,9 @@ footer{
     justify-content: center;
     padding: 15px;
     color: #285B4C;
-    font-weight: 500;
+    font-weight: 650;
     align-content: center;
+    margin: 25px 0px;
 }
 .nombrepajaro{
     display: flex;
