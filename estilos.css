@@ -362,7 +362,6 @@ footer{
 .slider-frame{
     width: 100%;
     height: auto;
-    margin: 50px auto 0;
     overflow: hidden;
 }
 .slide {
@@ -394,9 +393,44 @@ footer{
     100% { transform: translateX(0); }
 }
 .slide .bajada-slider{
-    bottom: 90px;
+    bottom: 50px;
 }
 /*-----------------------------------------------------fin de slider*/
+.registros p{
+    color: #285B4C;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 100px;
+    background: #F6EDD9;
+    width: 50%;
+    padding: 10px;
+    margin: 40px 0px;
+}
+.registros{
+    display: flex;
+    justify-content: center;
+}
+/*---------------------------------------------------fin de registrar*/
+.btn-flotante{
+    z-index: 1;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 400px;
+    border: 15px solid #20B038;
+    background-color: #20B038;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    /* Animación al pasar el mouse */
+.btn-flotante:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+/*-------------------------------------------------------boton flotante wpp*/
 /*datos-grid*/
 .grid {
     display: grid;
