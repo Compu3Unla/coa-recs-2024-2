@@ -581,50 +581,6 @@ video {
     display: flex;
     justify-content: center;
 }
-
-.circuitos {
-    display: flex;
-    flex-direction: column;
-}
-
-.secciones-circuitos {
-    padding: 120px;
-    display: flex;
-    flex-direction: column;
-}
-
-.contenedor-circuitos {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-}
-
-.item-circuitos {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-
-.info-circuitos {
-    background-color: #F6EDD9;
-    padding: 25px 15px 15px 15px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-}
-
-.circuitos h2 {
-    color: #F6EDD9;
-    background-color: #285B4C;
-    border-radius: 25px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-    position: relative;
-    bottom: -15px;
-}
-
 .secciones-consejos {
     background-image: url('img/la-reserva/fondo-onda-verde.png');
     background-repeat: no-repeat;
@@ -820,6 +776,296 @@ input {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GALERIA*/
+.galeria {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+.g-circuito img {
+    border-radius: 40px;
+    margin: 20px 12px;
+    border: 1px solid #A0B210;
+    box-shadow: 0 0 5px #285B4C;
+    padding: 20px;
+}
+.g-circuito img:hover {
+    transform: scale(1.1);
+}
+/* galeria */
+#galeria{
+    display: none;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+/*galeria oculta*/
+#galeria-oculta {
+    width: 60%;
+    max-width: 1200px;
+    overflow: hidden;
+    z-index: 20;
+}
+.fraccion-galeria{
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+    justify-content: space-around;
+}
+.contenedor-galeria-p{
+    display: flex;
+    height: 100%;
+    font-size: 2em;
+    font-weight: 500;
+    align-items: flex-end;
+    margin-bottom: 150px;
+}
+.fraccion-galeria img {
+    transition: filter 0.4s ease, transform 0.5s ease;
+    cursor: pointer;
+}
+.fraccion-galeria a:first-child {
+    margin-top: 700px;
+    margin-right: 10px; /*margen de flecha*/
+}
+.fraccion-galeria a:last-child {
+    margin-top: 700px;
+    margin-left: 10px; /*margen de flecha*/
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 2%;
+}
+.primer-ultima-flecha {
+    visibility: hidden;
+}
+/* imágenes galeria oculta */
+#foto-1 {
+    background-image: url("img/la-reserva/circuito-humedales.svg");
+}
+#foto-2 {
+    background-image: url("img/la-reserva/circuito-rio.svg");
+}
+#foto-3 {
+    background-image: url("img/la-reserva/circuito-paisajes.svg");
+}
+#foto-4 {
+    background-image: url("img/la-reserva/circuito-grande.svg");
+}
+.titulo-mapa h2 {
+    padding: 50px 0px 50px 120px;
+    font-size: 1.5em;
+    color: #285B4C;
+    font-weight: 700;
+}
+.item-circuitos {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.info-circuitos {
+    background-color: #F6EDD9;
+    padding: 25px 15px 15px 15px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.circuitos h2 {
+    color: #F6EDD9;
+    background-color: #285B4C;
+    border-radius: 25px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    position: relative;
+    bottom: -15px;
+}
 
 
 
