@@ -227,7 +227,7 @@ footer{
 }
 /*----------------------------------------------------inicio de catálogo parajos*/
 .cardcontenedor{
-    margin: 70px 0px;
+    margin: 70px 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -391,9 +391,6 @@ footer{
     95% {margin-left: -300%;}
 
     100% { transform: translateX(0); }
-}
-.slide .bajada-slider{
-    bottom: 50px;
 }
 /*-----------------------------------------------------fin de slider*/
 .registros p{
