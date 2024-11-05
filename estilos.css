@@ -392,6 +392,10 @@ footer{
 
     100% { transform: translateX(0); }
 }
+.slide .bajada-slider{
+    bottom: 90px;
+}
+/*-----------------------------------------------------fin de slider*/
 /*datos-grid*/
 .grid {
     display: grid;
@@ -500,7 +504,6 @@ footer{
     position: absolute;
     bottom: 40px;
 }
-
 .bajada-slider {
     font-style: italic;
     font-size: 0.8em;
