@@ -710,3 +710,168 @@ video {
     background-color: #A0B210;
 }
 
+/*-----------------------------------------------------------ANTO*/
+/*-------------------------------FORMULARIO COA RECS*/
+.pajaritoform {
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+}
+.pajaritoform {
+    animation: subirBajar 2s ease-in-out infinite;
+}
+    /* Animación de subir y bajar */
+@keyframes subirBajar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 170px;
+}
+.form-titulo{
+    color: #285B4C;
+    text-align: center;
+    padding: 20px 20px 60px 20px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+}
+form {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1000px;
+}
+input {
+    background-color: #f6edd9a3;
+    border-radius: 15px;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    margin: 10px 0px 40px;
+}
+.label {
+    margin-left: 10px;
+    color: #285B4C;
+    font-weight: 500;
+}
+.form-doscolumnas {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+}
+.columnas-form{
+    width: 100%;
+}
+.submit{
+    background-color: #285B4C;
+    color: #f6edd9;
+    font-weight: 500;
+    margin: auto;
+    padding: 20px 50px;
+    cursor: pointer;
+    display: flex;
+    max-width: fit-content;
+    border-radius: 180px;
+}
+.submit:active{
+    background-color: #A0B210;
+    color: #285B4C;
+}
+/*-----------------------------------------SLIDER INFINITO*/
+.slider{
+    overflow: hidden;
+    padding: 0px;
+}
+.slider .slide-track{
+    display: flex;
+    animation: scroll 50s linear infinite;
+    width: calc(1000px * 14);
+    -webkit-animation: scroll 50s linear infinite;
+}
+.slider .slide{
+    width: 2000px;
+}
+.slider .slide img{
+    width: 100%;
+}
+@keyframes scroll{
+    0%{
+        transform: translate(0);
+        -webkit-transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-200px * 7));
+        -webkit-transform: translateX(calc(-200px * 7));
+    }
+}
+/*-----------------------------------Fin de SLIDER INFINITO*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
