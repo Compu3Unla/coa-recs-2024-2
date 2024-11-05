@@ -364,7 +364,7 @@ footer{
     height: auto;
     overflow: hidden;
 }
-.slide {
+.slide-automatico {
     display: flex;
     animation: slider 16s infinite ease-in-out;
     width: 400%;
