@@ -6,6 +6,84 @@
     <link href="estilos.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+    <!-- Checkbox oculto para controlar el estado del pop-up -->
+    <input type="checkbox" id="popup-toggle" checked/>
+    <!-- Pop-up Overlay -->
+    <div class="popup-overlay">
+        <div class="popup" id="galeria">
+            <img class="close" src="img/x-circle.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
+            <!-- Iconos superiores -->
+            <div class="icons">
+                <img src="img/tramahoja.svg" alt="vector de hoja" class="icon">
+                <img src="img/tramaplanta.svg" alt="vector de planta" class="icon">
+                <img src="img/tramaestrella.svg" alt="vector de estrella" class="icon">
+                <img src="img/tramagotaota.svg" alt="vector de gota" class="icon">
+                <img src="img/tramaflor.svg" alt="vector de flor" class="icon">
+                <img src="img/tramadoshojas.svg" alt="vector de hojas" class="icon">
+            </div>
+            <!-- Encabezado -->
+            <h2>PRÓXIMAS SALIDAS</h2>
+            <!-- Calendario -->
+            <div class="calendar">
+                <div class="day-name">Lun</div>
+                <div class="day-name">Mar</div>
+                <div class="day-name">Mier</div>
+                <div class="day-name">Juev</div>
+                <div class="day-name">Vier</div>
+                <div class="day-name">Sab</div>
+                <div class="day-name">Dom</div>
+                <div class="day">01</div>
+                <div class="day highlight">02</div>
+                <div class="day">03</div>
+                <div class="day">04</div>
+                <div class="day">05</div>
+                <div class="day">06</div>
+                <div class="day highlight">07</div>
+                <div class="day">08</div>
+                <div class="day">09</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>
+                <div class="day">01</div>
+                <div class="day">02</div>
+                <div class="day">03</div>
+                <div class="day">04</div>
+            </div>
+            <!-- Advertencia -->
+            <div class="alert">
+                ATENCIÓN<br>
+                Toda actividad dentro de la reserva se suspende por fuertes lluvias
+            </div>
+            <!-- Iconos inferiores -->
+            <div class="icons">
+                <img src="img/tramahoja.svg" alt="vector de hoja" class="icon">
+                <img src="img/tramaplanta.svg" alt="vector de planta" class="icon">
+                <img src="img/tramaestrella.svg" alt="vector de estrella" class="icon">
+                <img src="img/tramagotaota.svg" alt="vector de gota" class="icon">
+                <img src="img/tramaflor.svg" alt="vector de flor" class="icon">
+                <img src="img/tramadoshojas.svg" alt="vector de hojas" class="icon">
+            </div>
+        </div>
+    </div>
     <header> <!-- Empiezo con header y footer asi puedo adelantar algo-->
         <nav class= "botonera">
             <a href=index.html ><img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo" class="isologo"></a>
