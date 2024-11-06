@@ -20,24 +20,24 @@
     padding: 20px 120px;
     align-items: center;
 }
-
 .botonera ul {
     display: flex;
     gap: 60px;
 }
-
-.botonera a {
+.botonera li {
     border-radius: 25px;
     background-color: #285B4C;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #F6EDD9;
     padding: 10px 15px;
 }
-
-.botonera a:hover {
+.botonera li a{
+    color: inherit;
+    text-decoration: none;
+}
+.botonera li:hover {
     background-color:#A0B210;
 }
-
 /* estilos de H */
 h1 {
     font-size: 1.5em;
@@ -227,7 +227,7 @@ footer{
 }
 /*----------------------------------------------------inicio de catálogo parajos*/
 .cardcontenedor{
-    margin: 70px 0px;
+    margin: 100px 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -298,6 +298,15 @@ footer{
     background-color: #285B4C;
     color: #F6EDD9;
 }
+.nombrepajaro h3{
+    z-index: 10;
+}
+.banda{
+    position: absolute;
+    width: 100%;
+    height: 770px;
+    z-index: 0;
+}
 /*------------------------------------------------------boton audio*/
 .toggleSwitch {
     width: 50px;
@@ -364,7 +373,7 @@ footer{
     height: auto;
     overflow: hidden;
 }
-.slide {
+.slide-automatico {
     display: flex;
     animation: slider 16s infinite ease-in-out;
     width: 400%;
@@ -391,9 +400,6 @@ footer{
     95% {margin-left: -300%;}
 
     100% { transform: translateX(0); }
-}
-.slide .bajada-slider{
-    bottom: 50px;
 }
 /*-----------------------------------------------------fin de slider*/
 .registros p{
@@ -584,50 +590,6 @@ video {
     display: flex;
     justify-content: center;
 }
-
-.circuitos {
-    display: flex;
-    flex-direction: column;
-}
-
-.secciones-circuitos {
-    padding: 120px;
-    display: flex;
-    flex-direction: column;
-}
-
-.contenedor-circuitos {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-}
-
-.item-circuitos {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-
-.info-circuitos {
-    background-color: #F6EDD9;
-    padding: 25px 15px 15px 15px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-}
-
-.circuitos h2 {
-    color: #F6EDD9;
-    background-color: #285B4C;
-    border-radius: 25px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-    position: relative;
-    bottom: -15px;
-}
-
 .secciones-consejos {
     background-image: url('img/la-reserva/fondo-onda-verde.png');
     background-repeat: no-repeat;
@@ -824,6 +786,370 @@ input {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GALERIA*/
+.galeria {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+.g-circuito img {
+    border-radius: 40px;
+    margin: 20px 12px;
+    border: 1px solid #A0B210;
+    box-shadow: 0 0 5px #285B4C;
+    padding: 20px;
+}
+.g-circuito img:hover {
+    transform: scale(1.1);
+}
+/* galeria */
+#galeria{
+    display: none;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+/*galeria oculta*/
+#galeria-oculta {
+    width: 60%;
+    max-width: 1200px;
+    overflow: hidden;
+    z-index: 20;
+}
+.fraccion-galeria{
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+    justify-content: space-around;
+}
+.contenedor-galeria-p{
+    display: flex;
+    height: 100%;
+    font-size: 2em;
+    font-weight: 500;
+    align-items: flex-end;
+    margin-bottom: 150px;
+}
+.fraccion-galeria img {
+    transition: filter 0.4s ease, transform 0.5s ease;
+    cursor: pointer;
+}
+.fraccion-galeria a:first-child {
+    margin-top: 700px;
+    margin-right: 10px; /*margen de flecha*/
+}
+.fraccion-galeria a:last-child {
+    margin-top: 700px;
+    margin-left: 10px; /*margen de flecha*/
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 2%;
+}
+.primer-ultima-flecha {
+    visibility: hidden;
+}
+/* imágenes galeria oculta */
+#foto-1 {
+    background-image: url("img/la-reserva/circuito-humedales.svg");
+}
+#foto-2 {
+    background-image: url("img/la-reserva/circuito-rio.svg");
+}
+#foto-3 {
+    background-image: url("img/la-reserva/circuito-paisajes.svg");
+}
+#foto-4 {
+    background-image: url("img/la-reserva/circuito-grande.svg");
+}
+.titulo-mapa h2 {
+    padding: 50px 0px 50px 120px;
+    font-size: 1.5em;
+    color: #285B4C;
+    font-weight: 700;
+}
+.item-circuitos {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.info-circuitos {
+    background-color: #F6EDD9;
+    padding: 25px 15px 15px 15px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.circuitos h2 {
+    color: #F6EDD9;
+    background-color: #285B4C;
+    border-radius: 25px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    position: relative;
+    bottom: -15px;
+}
+/*-----------------------------------------------------------FIN DE GALERIA*/
+.agradecer{
+    display: inline-flex;
+    margin: 50px;
+    padding: 28px 187px 58px 187px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 260px 10px 200px 10px;
+    background: #F6EDD9;
+}
+.agradecer h2{
+    font-size: 2em;
+}
+.agradecer p{
+    font-size: 1.2em;
+}
+.contenedor-agradecer{
+    display: flex;
+    justify-content: center;
+}
+/* ----------------------------------------------
+---------------------------------------------- */
+.contenedor-animacion {
+    position: relative;
+    width: 100px; /* Ajusta el tamaño según necesites */
+    height: 100px;
+}
+
+.bird-body {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    width: 100%;
+    height: auto;
+    animation: float 1s infinite ease-in-out;
+}
+
+.bird-wings {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    animation: flapping 0.5s infinite step-start; /* Alternancia de alas */
+}
+.wings-down {
+    animation-delay: 0s; /* Alas hacia abajo */
+}
+.wings-up {
+    animation-delay: 0.25s; /* Alas hacia arriba */
+    opacity: 0; /* Comienza invisible */
+}
+@keyframes flapping {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /* Ajusta la altura del vuelo */
+    }
+}
+.boton-volver{
+    margin: 20px;
+}
 
 
 

@@ -8,7 +8,7 @@
 <body>
     <header> <!-- Empiezo con header y footer asi puedo adelantar algo-->
         <nav class= "botonera">
-            <img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo">
+            <a href=index.html ><img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo" class="isologo"></a>
             <ul>
                 <li><a href= "sobrenosotros.html">Sobre nosotros</a></li>
                 <li><a href="visita-la-recs.html">Visitá la reserva</a></li>
@@ -19,26 +19,29 @@
     </header>
     <main>
         <div class="slider-frame">
-            <ul class="slide">
+            <ul class="slide-automatico">
                 <li><img src="img/slider/catalogo/patos-volando.jpg" width="1920px" height="856px" alt="patos-volando"> <p class="bajada-slider">Bandada de patos</p></li>
                 <li><img src="img/slider/catalogo/nido-hornero.jpg" width="1920px" height="856px" alt="nido-hornero"> <p class="bajada-slider">Nido de hornero</p></li>
                 <li><img src="img/slider/catalogo/cotorras.jpg" width="1920px" height="856px" alt="cotorras"> <p class="bajada-slider">Bandada de cotorras</p></li>
                 <li><img src="img/slider/catalogo/churrinche.jpg" width="1920px" height="856px" alt="churrinche"> <p class="bajada-slider">Pájaro churrinche</p></li>
+            </ul>
         </div>
-                <div class="texto-slider">
+            <div class="texto-slider">
             <div class="pastilla-slider">
                 <h1>Guía digital fotográfica de Aves</h1>
                 <p>Conoce todo sobre las aves en argentina y disfruta </p><p> sus maravillosos cantos</p>
             </div>
         </div>
-        <a href="https://whatsapp.com/channel/0029Vaj1EEw1Hsq1kCZibK2K" target="_blank"><button class="btn-flotante"><img src="img/svg/wpp.png" width="49px" height="49px" alt="whatsapp"></button></a>
+        <div> <!--boton flotante-->
+            <a href="https://whatsapp.com/channel/0029Vaj1EEw1Hsq1kCZibK2K" target="_blank"><button class="btn-flotante"><img src="img/svg/wpp.png" width="49px" height="49px" alt="whatsapp"></button></a>
+        </div>
         <!--card por pajaro-->
         <div class="cardcontenedor">
             <div class="cardpajaros">
                 <div class="card">
                     <img src="img/cards-pajaros/pato-capuchino.jpg" width="360px" height="516px" alt="pato-capuchino">
                     <div class="card__contenido">
-                        <p class="card__descripcion">Mide de 37 a 42 cm.</p>
+                        <p class="card__descripcion">Mide entre 37 a 42 cm de longitud.</p>
                         <p class="card__descripcion">Se alimenta de semillas y de plantas acuáticas. Complementa su dieta con pequeños invertebrados, artrópodos e insectos.</p>
                             <p class="card__descripcion">Su distribución geográfica se extiende por América del Sur.</p>
                         <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
@@ -140,6 +143,7 @@
         </div>
         <!-------------------------------------------------------fin de primera fila-->
         <div class="cardcontenedor">
+            <img class="banda" src="img/la-reserva/fondo-onda-verde.png" width="1920px" alt="banda-verde">
             <div class="cardpajaros">
                 <div class="card">
                     <img src="img/cards-pajaros/carancho.jpg" width="360px" height="516px" alt="carancho">
@@ -170,8 +174,8 @@
                 <div class="card">
                     <img src="img/cards-pajaros/chingolo.jpg" width="360px" height="516px" alt="chingolo">
                     <div class="card__contenido">
-                        <p class="card__descripcion">Mide entre 13 y 15 cm de largo.</p>
-                        <p class="card__descripcion">Su principal alimento, semillas y gusanos.</p>
+                        <p class="card__descripcion">Mide entre 13 y 15 cm de longitud.</p>
+                        <p class="card__descripcion">Su principal alimento, semillas y gusanos.</p>
                         <p class="card__descripcion">Habita una gran variedad de entornos, desde praderas abiertas y estepas hasta bosques, plantaciones agrícolas y ambientes urbanos.</p>
                         <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
                     </div>
