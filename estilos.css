@@ -1433,7 +1433,108 @@ footer{
 
 
 
-
+/*-------------------------------------------------pop up*/
+/* Checkbox oculto para controlar el pop-up */
+#popup-toggle {
+    display: none;
+}
+.popup-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    transition:  0.3s ease, visibility 0.3s ease;
+}
+.popup {
+    background: #18322a;
+    padding: 60px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.popup h2 {
+    background: #f5f1dc;
+    color: #18322a;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.5em;
+    margin: 0;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #A0B210;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close:hover {
+    color: #9fb21072;
+}
+/* Mostrar el overlay cuando tiene la clase 'active' */
+.popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columnas, una por día */
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    color: #f5f1dc;
+    font-family: Arial, sans-serif;
+}   
+.day-name {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: #b5c7b1;
+}
+.day {
+    text-align: center;
+    padding: 10px;
+    background-color: #2a4b3d2e;
+    border-radius: 4px;
+}
+.highlight {
+    background-color: #A0B210;
+    color: #fff;
+}
+.alert {
+    background: #f6edd9;
+    color: #ff0000;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 20px; 
+}
+.icon {
+    width: 50px; 
+    height: 50px;
+    background-color: #18322a; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; 
+}
 
 
 
