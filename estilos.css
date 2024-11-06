@@ -109,70 +109,36 @@ p {
     line-height: 1.5em;
 }
 
-/*guia de aves*/
-.section-guia{
+/* guia de aves-Index / mara */ 
+.catalogo-index {
     display: flex;
     flex-direction: column;
-    margin: 0px 120px;
-    gap: 20px;
+    gap: 30px;
+    margin: 100px 120px;
 }
-.section-guia a {
+
+.cards-index {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.vermas {
     background-color: #285B4C;
     border-radius: 25px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: #F6EDD9;
     padding: 10px 15px;
-    max-width: 175px;
+    max-width: fit-content;
+    align-self: end;
 }
 
-.section-guia p:hover {
-    background-color: #A0B210;
-    color: #285B4C;
-}
-
-.guiadeaves{
-    display: flex;
-    justify-content: space-between;
-}
-
-.catalogo {
-    max-width: 390px;
-    height: 516px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 95px 40px 30px 40px;
-    color: #285B4C;
-    font-weight: 600;
-}
-.nombre-pajaro{
-    display: flex;
-    background-color: #285B4C;
-    border-radius: 0px 50px 0px 5px;
-    justify-content: space-between;
-    padding: 10px 40px;
-}
-.nombre-pajaro h2 {
+.vermas a {
     color: #F6EDD9;
 }
 
-#patocapuchino {
-    background-image: url(img/cards-pajaros/pato-capuchino.jpg);
-    border-radius: 100px 5px 50px 0px;
+.vermas:hover {
+    background-color: #A0B210;
 }
-#colibri {
-    background-image: url(img/cards-pajaros/colibri-verde.jpg);
-    border-radius: 100px 5px 50px 0px;
-}
-#hornero{
-    background-image: url(img/cards-pajaros/hornero.jpg);
-    border-radius: 100px 5px 50px 0px;
-}
-#benteveo{
-    background-image: url(img/cards-pajaros/benteveo.jpg);
-    border-radius: 100px 5px 50px 0px;
-}
+
 
 /*preguntas*/
 
