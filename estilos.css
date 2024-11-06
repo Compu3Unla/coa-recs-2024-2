@@ -1154,6 +1154,284 @@ input {
 
 
 
+/*-----------------------------------------------------ESTO ES DE ANTO*/
+
+/*-----------------------------------------SLIDER INFINITO*/
+.slider-general .h2-nuestrosmiembros{ /*esta compitiendo con el h2 general. lo llame en cascada y nada*/
+    color: #285B4C;
+    font-weight: 600;
+    font-size: 1em;
+    padding-left: 120px;
+    display: flex;
+    padding-top: 200px; 
+    margin-bottom: 20px; 
+}
+.slider-general{
+    overflow: hidden;
+}
+.slider-general .amigoscoa h1{
+    padding: 200px 60px 60px;
+}
+.slider-general .slide-track{
+    display: flex;
+    animation: scroll 50s linear infinite;
+    width: calc(1000px * 14);
+    -webkit-animation: scroll 50s linear infinite;
+    padding: 20px 0px 200px 0px;
+}
+.slider-general .slide-general{
+    width: 2000px;
+}
+.slider-general .slide-general img{
+    width: 100%;
+}
+@keyframes scroll{
+    0%{
+        transform: translate(0);
+        -webkit-transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-200px * 7));
+        -webkit-transform: translateX(calc(-200px * 7));
+    }
+}
+/*-----------------------------------Fin de SLIDER INFINITO*/
+/* -------------------------------------------foter*/
+footer{
+    display: flex;
+    width: 100%;
+    background-color: #285B4C;
+    justify-content: space-between;
+    padding: 50px 120px;
+    align-items: center;
+}
+.redes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 15px 0px;
+}
+.redes p {
+    color: #F6EDD9;
+}
+.mapasitio a {
+    color: #F6EDD9;
+}
+.mapasitio a:hover {
+    color:#A0B210
+}
+.mapasitio ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.mapasitio ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.legales {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    font-size: 0.9em;
+    color:#F6EDD9;
+    font-weight: 400;
+}
+
+/*------------------------------------------------SECCION SOBRE NOSOTROS*/
+/*-------------------------------------------boton flotante*/
+.btn-flotante{
+    z-index: 1;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 400px;
+    border: 15px solid #20B038;
+    background-color: #20B038;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+/* Animación al pasar el mouse */
+.btn-flotante:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+/*-------------------------------------------SLIDER INFINITO DE SOBRE NOSOTROS cabecera*/
+.slider-frame{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.slide {
+    display: flex;
+    animation: slider 16s infinite ease-in-out;
+    width: 400%;
+}
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+.slider-frame img{
+    border-radius: 0px 0px 400px 0px;
+    width: 100%
+}
+@keyframes slider {
+    0%{margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95% {margin-left: -300%;}
+
+    100% { transform: translateX(0); }
+}
+.slide .bajada-slider{
+    bottom: 50px;
+}
+
+/*-------------------------------------------------------------SLIDER*/
+.pastilla-slider {
+    width: 570px;
+    height: 120px;
+    background-color: rgba(40, 91, 76, 0.50);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    gap: 20px;/*le puse 20, quizas vaya mejor*/
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 40px;
+}
+.bajada-slider {
+    font-style: italic;
+    font-size: 0.8em;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    padding-left: 120px;
+}
+.pastilla-slider p {
+    color: white;
+}
+.pastilla-slider h1 {
+    color: white;
+}
+.imgslidersobrenosotros{
+    border-bottom-right-radius: 400px;
+}
+
+/*-------------------------------------------que es coa*/
+.container{
+    display: inline-flex;
+    padding: 100px 0px 0px 0px
+}
+.text-content{
+    background-color: #F6EDD9;
+    width: 950px;
+    height: 300px;
+    border-bottom-right-radius: 100px;
+    padding: 5px 50px 5px 120px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-content h2 {
+    color: #285B4C;
+    font-size: 1.5em;
+}
+.text-content p {
+    font-size: 1em;
+    line-height: 1.8em;
+}
+.botones-coa-sobre-nosotros {
+    margin-left: 500px;
+    margin-top: 150px;
+}
+.botones-coa-sobre-nosotros a{
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #285B4C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #F6EDD9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px;
+    gap: 50px;
+}
+.botones-coa-sobre-nosotros a:hover {
+    background-color: #A0B210;
+}
+
+/*---------------------------------------------------             LINEA DE TIEMPO*/
+.linea_de_tiempo{
+    background-color: #285B4C;
+}
+.seccion-linea {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 60px 120px;
+    z-index: 10;
+}
+.seccion-linea h1 {
+    color: #F6EDD9;
+    z-index: 10;
+}
+.seccion-linea ul {
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+.seccion-linea h2 {
+    color: #F6EDD9;
+    margin-top: 25px;
+    z-index: 10;
+}
+.seccion-linea li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #F6EDD9;
+    border-radius: 0px 50px 0px 50px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    z-index: 10;
+}
+.seccion-linea img{
+    border-radius: 0px 50px 0px 50px;
+    z-index: 10;
+}
+.seccion-linea p{
+    color:#18322a;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 20px 0px 0px 0px;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
