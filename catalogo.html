@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <title>coarecs-g4</title>
     <link href="estilos.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -14,8 +15,25 @@
                 <li><a href="visita-la-recs.html">Visitá la reserva</a></li>
                 <li><a href="inscripcion.html">Quiero ser COA</a></li>
             </ul>
-            <img src="img/svg/advertencias.svg" width="50px" height="50px" alt="advertencia">
-        </nav>                
+            <!--input oculto-->
+            <div class="alert-container">
+                <input type="checkbox" id="alert-toggle" class="alert-toggle">
+                <label for="alert-toggle" class="alert-button">
+                    <img src="img/svg/advertencias.svg" alt="boton de alerta">
+                </label> 
+                <div class="alerta-del-nav">
+                    <div class="alert-box">
+                        <p class="alert-title">ATENCIÓN</p>
+                        <p>Toda actividad se suspende por fuertes lluvias</p>
+                    </div>
+                    <div class="horarios-box">
+                        <p class="horarios-title">HORARIOS</p>
+                        <p>Lunes a domingos<br>10 hs a 18.30 hs</p>
+                        <p>ENTRADA LIBRE Y GRATUITA</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="slider-general">
@@ -26,23 +44,19 @@
                 <li><img src="img/slider/catalogo/churrinche.jpg" width="1920px" height="856px" alt="churrinche"> <p class="bajada-slider">Pájaro churrinche</p></li>
             </ul>
         </div>
-
         <div class="pastilla-slider">
             <h1>Guía digital fotográfica de Aves</h1>
             <p>Conoce todo sobre las aves en argentina<br>y disfruta sus maravillosos cantos</p>
         </div>
-
         <!--boton flotante-->
         <a href="https://whatsapp.com/channel/0029Vaj1EEw1Hsq1kCZibK2K" target="_blank"><button class="btn-flotante"><img src="img/svg/wpp.png" width="49px" height="49px" alt="whatsapp"></button></a>
-        
-
         <!--card por pajaro-->
         <div class="cardcontenedor">
             <div class="cardpajaros">
                 <div class="card">
                     <img src="img/cards-pajaros/pato-capuchino.jpg" width="360px" height="516px" alt="pato-capuchino">
                     <div class="card__contenido">
-                        <p class="card__descripcion">Mide de 37 a 42 cm.</p>
+                        <p class="card__descripcion">Mide de 37 a 42 cm de longitud.</p>
                         <p class="card__descripcion">Se alimenta de semillas y de plantas acuáticas. Complementa su dieta con pequeños invertebrados, artrópodos e insectos.</p>
                         <p class="card__descripcion">Su distribución geográfica se extiende por América del Sur.</p>
                         <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
@@ -183,6 +197,7 @@
                 </div>
             </div>
         </div>
+        <!-------------------------------------------------------fin de primera fila-->
         <div class="cardcontenedor">
             <img class="banda" src="img/la-reserva/fondo-onda-verde.png" width="1920px" alt="banda-verde">
             <div class="cardpajaros">
@@ -330,6 +345,7 @@
                 </div>
             </div>
         </div>
+        <!-------------------------------------------------------fin de segunda fila-->
         <div class="cardcontenedor">
             <div class="cardpajaros">
                 <div class="card">

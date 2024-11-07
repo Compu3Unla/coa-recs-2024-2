@@ -4,18 +4,17 @@
     <meta charset="utf-8"/>
     <title>coarecs-g4</title>
     <link href="estilos.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav class= "botonera">
-
             <a href="index.html"><img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo" class="isologo"></a>
             <ul>
                 <li><a href= "sobrenosotros.html">Sobre nosotros</a></li>
                 <li><a href="visita-la-recs.html">Visitá la reserva</a></li>
                 <li><a href="inscripcion.html">Quiero ser COA</a></li>
             </ul>
-          
             <!--input oculto-->
             <div class="alert-container">
                 <input type="checkbox" id="alert-toggle" class="alert-toggle">
@@ -36,12 +35,9 @@
             </div>
         </nav>
     </header>
-
     <main>
-
         <!-- wapp -->
         <a href="https://whatsapp.com/channel/0029Vaj1EEw1Hsq1kCZibK2K" target="_blank"><button class="btn-flotante"><img src="img/svg/wpp.png" width="49px" height="49px" alt="whatsapp"></button></a>
-
         <section>
             <!--SLIDER GENERAL-->
             <div class="slider-general">
@@ -58,18 +54,16 @@
 
             </div>
         </section>
-        
         <div class="container">
             <div class="container-cremita">
                 <h2>¿Qué es el COA?</h2>
                 <p>El CoaRECS fue fundado el 17 de mayo de 2008. En ese momento, era crítico el estado del agua en las Lagunas y el Coa es un instrumento útil para aglutinar a la gente de manera organizada para dialogar con las autoridades gubernamentales y favorecer todas las acciones que ayudarán a mantener en condiciones buenas a la RECS.</p>
             </div>
             <div class="botones-pdf">
-                <a href="img/club_de_observadores_codigoconducta.pdf" target="_blank" class="button">Código de Conducta</a>
-                <a href="img/club_de_observadores_codigoconducta.pdf" target="_blank" class="button">Reglamento COA</a>
+                <a href="img/sobre-nosotros/manual_normas.pdf" target="_blank" class="button">Código de Conducta</a>
+                <a href="img/sobre-nosotros/coa_reglamento_interno.pdf" target="_blank" class="button">Reglamento COA</a>
             </div>
         </div>
-
         <!-- comentarios -->
         <section class="slider-comentarios">
             <h2>Nuestros miembros</h2>
@@ -97,36 +91,85 @@
                 </div>
             </div>
         </section>
-
         <!-- LINEA DE TIEMPO -->
-        <section class="linea_de_tiempo">
-            <div class="seccion-linea">
-                <h2>Nuestra historia</h2>
-                <ul>
-                    <li>
-                        <img src="img/linea-de-tiempo/hoja.jpg" width="390px" height="520PX" alt="Hoja manuscrita con información de coa recs">
-                        <p>17 de Mayo 2008</p>
-                    </li>
-                    <li>
-                        <img src="img/linea-de-tiempo/aves-arg.jpg" width="390px" height="520PX"  alt="Logo de aves argentinas">
-                        <p>19 de Mayo 2008</p>
-                    </li>
-                    <li>
-                        <img src="img/linea-de-tiempo/linea3.jpg" width="390px" height="520PX"  alt="Fotografía de grupo de gente">
-                        <p>31 de Mayo 2008</p>
-                    </li>
-                    <li>
-                        <img src="img/linea-de-tiempo/reconocimiento.jpg" width="390px" height="520PX" alt="Reconocimiento a coa recs">
-                        <p>5 de Junio 2011</p>
-                    </li>
-                </ul>
+        <h2>Nuestra historia</h2>
+        <section class="cardcontenedor">
+            <img class="banda" src="img/la-reserva/fondo-onda-verde.png" width="1920px" alt="banda-verde">
+            <div class="cardpajaros">
+                <div class="card">
+                    <img src="img/linea-de-tiempo/hoja.jpg" width="390px" height="520px" alt="hoja">
+                    <div class="card__contenido">
+                        <p class="card__linea">Creación COA RECS</p>
+                    </div>
+                </div>
+                <div class="nombrelinea">
+                    <h3>17 de Mayo 2008</h3>
+                </div>
+            </div>
+            <div class="cardpajaros">
+                <div class="card">
+                    <img src="img/linea-de-tiempo/aves-arg.jpg" width="390px" height="520px" alt="aves argetinas">
+                    <div class="card__contenido">
+                        <p class="card__linea">Firma del convenio con Aves Argentinas</p>
+                    </div>
+                </div>
+                <div class="nombrelinea">
+                    <h3>19 de Mayo 2008</h3>
+                </div>
+            </div>
+            <div class="cardpajaros">
+                <div class="card">
+                    <img src="img/linea-de-tiempo/linea3.jpg" width="390px" height="520px" alt="grupo de gente fotografiando">
+                    <div class="card__contenido">
+                        <p class="card__linea">Primer salida del COA RECS</p>
+                    </div>
+                </div>
+                <div class="nombrelinea">
+                    <h3>31 de Mayo 2008</h3>
+                </div>
+            </div>
+            <div class="cardpajaros">
+                <div class="card">
+                    <img src="img/linea-de-tiempo/reconocimiento.jpg" width="390px" height="520px" alt="reconocimiento">
+                    <div class="card__contenido">
+                        <p class="card__linea">Entrega de reconocimiento</p>
+                    </div>
+                </div>
+                <div class="nombrelinea">
+                    <h3>5 de Junio 2011</h3>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- miembros coa -->
+        <section class="slider-comentarios">
+            <h2>Nuestros amigos COA</h2>
+            <div class="slide-track">
+                <div class="slide-general">
+                    <img src="img/sobre-nosotros/amigos_otros_coa.svg" alt="tira de amigos coa">
+                </div>
+                <div class="slide-general">
+                    <img src="img/sobre-nosotros/amigos_otros_coa.svg" alt="tira de amigos coa">
+                </div>
+                <div class="slide-general">
+                    <img src="img/sobre-nosotros/amigos_otros_coa.svg" alt="tira de amigos coa">
+                </div>
+                <div class="slide-general">
+                    <img src="img/sobre-nosotros/amigos_otros_coa.svg" alt="tira de amigos coa">
+                </div>
+                <div class="slide-general">
+                    <img src="img/sobre-nosotros/amigos_otros_coa.svg" alt="tira de amigos coa">
+                </div>
+                <div class="slide-general">
+                    <img src="img/sobre-nosotros/amigos_otros_coa.svg" alt="tira de amigos coa">
+                </div>
+                <div class="slide-general">
+                    <img src="img/sobre-nosotros/amigos_otros_coa.svg" alt="tira de amigos coa">
+                </div>
             </div>
         </section>
-    
-        <!-- miembros coa -->
-        
     </main>
-
     <!--FOOTER-->
     <footer>
         <div>

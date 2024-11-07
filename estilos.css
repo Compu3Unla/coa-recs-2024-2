@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 
-/* ---------------------------- slide general -----------------------*/
+/* ---------------------------- slide general automatico-----------------------*/
 .slider-general{
     width: 100%;
     height: auto;
@@ -464,10 +464,6 @@ footer{
     perspective: 1000px;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.nombrepajaro h3{
-    font-family: "Montserrat";
-    font-size: 1em;
-}
 .card img {
     width: 360px;
     transition: opacity 1.2s ease, transform 1.2s ease;
@@ -477,7 +473,7 @@ footer{
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
     opacity: 80%;
 }
-.card__contenido {
+.card__contenido, .card__linea {
     position: absolute;
     top: 0;
     left: 0;
@@ -518,10 +514,33 @@ footer{
     background-color: #285B4C;
     color: #F6EDD9;
 }
-.nombrepajaro h3{
+.cardpajaros{
     z-index: 10;
 }
-.banda{
+.nombrelinea{  /*---------------------------------------HOVER SOBRE NOSOTROS*/
+    display: flex;
+    width: 360px;
+    height: 70px;
+    padding: 28px 30px 28px 27px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 50px 0px 5px;
+    background-color: #f6edd9;
+    color: #285B4C;
+}
+.card__linea{
+    color: #f6edd9;
+    font-size: 1.3em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card:hover .card__linea{
+    background-color: #285b4cc2;  /*color de fondo hover*/
+    opacity: 1; /* Se muestra lentamente */
+}
+.banda{  /*------------------------------------------BANDA VERDE*/
     position: absolute;
     width: 100%;
     height: 770px;
@@ -588,8 +607,6 @@ footer{
     transform: scale(0.7);
 }
 /*---------------------------------------------------------fin boton audio*/
-
-/*-----------------------------------------------------fin de slider*/
 .registros p{
     color: #285B4C;
     text-align: center;
@@ -609,12 +626,11 @@ footer{
     justify-content: center;
 }
 
-
 /* -------------------- la-reserva ---------------- */
 video {
     border-bottom-right-radius: 400px;
+    width: 100%; /*se agrego width por el scroll horizontal*/
 }
-
 .ubicacion-recs {
     width: 820px;
     height: 130px;
@@ -628,7 +644,7 @@ video {
 }
 
 .secciones-ubicacion , .mapa-recs , .secciones-circuitos , .secciones-consejos , .secciones-recomendaciones {
-    padding: 60px 0px;
+    padding:90px 80px;  /*60px 0px;*/
 }
 
 .mapa-recs {
@@ -636,15 +652,17 @@ video {
     justify-content: center;
 }
 .secciones-consejos {
-    background-image: url('img/la-reserva/fondo-onda-verde.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 120px;
+    z-index: 10;
 }
-
+.consejos .banda{
+    z-index: -1;
+}
 .secciones-consejos ul {
+    /*display: flex;
+    justify-content: space-between;*/
     display: flex;
-    justify-content: space-between;
+    margin-top: 60px;
+    justify-content: space-evenly;
 }
 
 .secciones-consejos h2 {
@@ -662,7 +680,7 @@ video {
 .secciones-recomendaciones {
     display: flex;
     flex-direction: column;
-    padding-right: 120px;
+    padding-right: 120px; /*no hace nada*/
 }
 
 .contenedor-recomendaciones {
@@ -771,7 +789,7 @@ input {
     background-color: #A0B210;
     color: #285B4C;
 }
-/*-----------------------------------------SLIDER INFINITO*/
+/*-------------------------------------SLIDER INFINITO ILUSTRACIONES*/
 .slider{
     overflow: hidden;
     padding: 0px;
@@ -798,193 +816,9 @@ input {
         -webkit-transform: translateX(calc(-200px * 7));
     }
 }
-/*-----------------------------------Fin de SLIDER INFINITO*/
+/*-----------------------------------Fin de SLIDER INFINITO ILUSTRACIONES*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* GALERIA*/
+/* -----------------------------------GALERIA*/
 .galeria {
     display: flex;
     justify-content: space-evenly;
@@ -1173,28 +1007,18 @@ input {
 .boton-volver{
     margin: 20px;
 }
-
-
-
-
 /*-----------------------------------------------------ESTO ES DE ANTO*/
 
-/* SLIDER COMENTARIOS */
-.slider-comentarios .h2-nuestrosmiembros{ 
-    color: #285B4C;
-    font-weight: 600;
-    font-size: 1em;
+/* --------------------------------------------------SLIDER COMENTARIOS Y AMIGOS COA*/
+.slider-comentarios h2{ 
     padding-left: 120px;
     display: flex;
-    padding-top: 200px; 
+    padding-top: 80px; 
     margin-bottom: 20px; 
 }
 .slider-comentarios{
     overflow: hidden;
     margin: 50px 0px;
-}
-.slider-comentarios .amigoscoa h1{
-    padding: 200px 60px 60px;
 }
 .slider-comentarios .slide-track{
     display: flex;
@@ -1202,8 +1026,8 @@ input {
     width: calc(1000px * 14);
     -webkit-animation: scroll 50s linear infinite;
     gap: 80px;
+    margin-bottom: 80px;
 }
-
 @keyframes scroll{
     0%{
         transform: translate(0);
@@ -1214,8 +1038,8 @@ input {
         -webkit-transform: translateX(calc(-200px * 7));
     }
 }
-/*-----------------------------------Fin de SLIDER INFINITO*/
-/* -------------------------------------------foter*/
+/*-----------------------------------Fin de SLIDER COMENTARIO Y AMIGOS COA*/
+/* -------------------------------------------footer*/
 footer{
     display: flex;
     width: 100%;
@@ -1306,12 +1130,11 @@ footer{
     padding: 20px 0px 0px 0px;
     z-index: 10;
 }
-
-
 /*-------------------------------------------------pop up del index */
 /* Checkbox oculto para controlar el pop-up */
 #popup-toggle {
     display: none;
+    z-index: 10;
 }
 .popup-overlay {
     position: fixed;

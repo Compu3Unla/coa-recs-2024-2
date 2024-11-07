@@ -16,6 +16,7 @@
                 cambiarDisplay('none')
             }
         </script>
+        <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     </head>
 <body>
     <header>
@@ -26,12 +27,29 @@
                 <li><a href="visita-la-recs.html">Visitá la reserva</a></li>
                 <li><a href="inscripcion.html">Quiero ser COA</a></li>
             </ul>
-            <img src="img/svg/advertencias.svg" width="50px" height="50px" alt="advertencia">
-        </nav>                
+            <!--input oculto-->
+            <div class="alert-container">
+                <input type="checkbox" id="alert-toggle" class="alert-toggle">
+                <label for="alert-toggle" class="alert-button">
+                    <img src="img/svg/advertencias.svg" alt="boton de alerta">
+                </label> 
+                <div class="alerta-del-nav">
+                    <div class="alert-box">
+                        <p class="alert-title">ATENCIÓN</p>
+                        <p>Toda actividad se suspende por fuertes lluvias</p>
+                    </div>
+                    <div class="horarios-box">
+                        <p class="horarios-title">HORARIOS</p>
+                        <p>Lunes a domingos<br>10 hs a 18.30 hs</p>
+                        <p>ENTRADA LIBRE Y GRATUITA</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
-      <!--boton flotante-->
+    <!--boton flotante-->
         <a href="https://whatsapp.com/channel/0029Vaj1EEw1Hsq1kCZibK2K" target="_blank"><button class="btn-flotante"><img src="img/svg/wpp.png" width="49px" height="49px" alt="whatsapp"></button></a>
         <section> <!-- SLIDE GENERAL -->
             <video  width="1920" height="856" autoplay loop muted>
@@ -168,8 +186,9 @@
 
         <!-- RECO Y PRECAUCIONES -->
         <section class="consejos">
+            <img class="banda" src="img/la-reserva/fondo-onda-verde.png" width="1920px" alt="banda-verde">
             <div class="secciones-consejos">
-                <h1>Consejos para principiantes</h1>
+                <h2>Consejos para principiantes</h2>
                 <ul>
                     <li>
                         <img src="img\la-reserva\binoculares.svg" width="227px" height="215px" alt="Ilustración de binoculares">
@@ -191,7 +210,7 @@
             </div>
         </section>
         <section class="secciones-recomendaciones">
-            <h1>Recomendaciones y precauciones</h1>
+            <h2>Recomendaciones y precauciones</h2>
             <div class="container">
                 <ul class="container-cremita">
                     <li>Respetá el itinerario del sendero, no te separes de los circuitos</li>
