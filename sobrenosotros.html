@@ -1,26 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>SOBRE NOSOTROS</title>
+    <meta charset="utf-8"/>
+    <title>coarecs-g4</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <!--INICIO DE BOTONERA-->
     <header>
         <nav class= "botonera">
+
             <a href="index.html"><img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo" class="isologo"></a>
             <ul>
                 <li><a href= "sobrenosotros.html">Sobre nosotros</a></li>
                 <li><a href="visita-la-recs.html">Visitá la reserva</a></li>
                 <li><a href="inscripcion.html">Quiero ser COA</a></li>
             </ul>
-            <img src="img/svg/advertencias.svg" width="50px" height="50px" alt="advertencia"> 
-        </nav>                
+          
+            <!--input oculto-->
+            <div class="alert-container">
+                <input type="checkbox" id="alert-toggle" class="alert-toggle">
+                <label for="alert-toggle" class="alert-button">
+                    <img src="img/svg/advertencias.svg" alt="boton de alerta">
+                </label> 
+                <div class="alerta-del-nav">
+                    <div class="alert-box">
+                        <p class="alert-title">ATENCIÓN</p>
+                        <p>Toda actividad se suspende por fuertes lluvias</p>
+                    </div>
+                    <div class="horarios-box">
+                        <p class="horarios-title">HORARIOS</p>
+                        <p>Lunes a domingos<br>10 hs a 18.30 hs</p>
+                        <p>ENTRADA LIBRE Y GRATUITA</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
+
         <!-- wapp -->
         <a href="https://whatsapp.com/channel/0029Vaj1EEw1Hsq1kCZibK2K" target="_blank"><button class="btn-flotante"><img src="img/svg/wpp.png" width="49px" height="49px" alt="whatsapp"></button></a>
 
@@ -33,11 +51,11 @@
                     <li><img src="img/slider/coa/grupo-reserva.jpg" width="1920px" height="856px" alt="grupo fotografiando aves"> <p class="bajada-slider">Grupo fotografiando aves</p></li>
                     <li><img src="img/slider/coa/hombre.jpg" width="1920px" height="856px" alt="hombre con camara fotográfica"><p class="bajada-slider">Hombre fotografiando aves</p></li>
                 </ul>
-            </div>
-            
+            </div>            
             <div class="pastilla-slider">
                 <h1>Sobre nosotros</h1>
                 <p>Convocamos actividades periódicas y<br> gratuitas sobre la observación de aves<br> silvestres y su conservación</p>
+
             </div>
         </section>
         
@@ -121,21 +139,22 @@
         </div>
         <div class="mapasitio">
             <ul>
-                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="#inicio">Inicio</a></li>
+                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="index.html">Inicio</a></li>
                 <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="sobrenosotros.html">Sobre nosotros</a></li>
-                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="visitalarecs.html">Visitá la reserva</a></li>
+                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="visita-la-recs.html">Visitá la reserva</a></li>
                 <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="inscripcion.html">Quiero ser COA</a></li>
                 <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="catalogo.html">Catálogo</a></li>
             </ul>            
         </div>
         <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.866986592482!2d-58.354782323360894!3d-34.60752485770075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3351f97fbdf97%3A0xc0a4d539dc2254f!2sReserva%20Ecol%C3%B3gica%20Costanera%20Sur!5e0!3m2!1ses-419!2sar!4v1729278855101!5m2!1ses-419!2sar" width="550px" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <ul class="redes">
-                <li><p>Seguinos en redes:</p></li>
-                <li><a href="https://www.instagram.com/coarecs/" target="_blank"><img src="img/svg/ig.svg" alt="instagram"></a></li>
-                <li><a href="https://www.youtube.com/watch?v=ebSASzNQS1Q" target="_blank"><img src="img/svg/youtube.svg" alt="youtube"></a></li>
-                <li><a href="https://www.facebook.com/grupocoarecs" target="_blank"><img src="img/svg/face.svg" alt="facebook"></a></li>
-            </ul>
+
+            <div class="redes">
+                <p>Seguinos en redes:</p>
+                <a href="https://www.instagram.com/coarecs/" target="_blank"><img src="img/svg/ig.svg" alt="instagram"></a>
+                <a href="https://www.youtube.com/watch?v=ebSASzNQS1Q" target="_blank"><img src="img/svg/youtube.svg" alt="youtube"></a>
+                <a href="https://www.facebook.com/grupocoarecs" target="_blank"><img src="img/svg/face.svg" alt="facebook"></a>
+            </div>
         </div>
     </footer>
     <!--FIN DE FOOTER-->
