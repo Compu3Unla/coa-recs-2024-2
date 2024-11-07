@@ -5,6 +5,18 @@
     <title>COARECS</title>
     <link href="estilos.css" rel="stylesheet" type="text/css"/>
 
+    <!--java para Galeria-->
+    <script>
+        function cambiarDisplay(visibilidadNueva){
+            document.getElementById("galeria").style.display = visibilidadNueva
+        }
+        function mostrarGaleria(){
+            cambiarDisplay('flex')
+        }
+        function ocultarGaleria(){
+            cambiarDisplay('none')
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -22,7 +34,7 @@
     <main>
         <!--slide general-->
         <div class="slider-general">
-            <ul class="slide">
+            <ul class="slide-portada">
                 <li><img src="img/slider/index/carpintero.jpg" width="1920px" height="856px" alt="pato capuchino"><p class="bajada-slider">Pájaro Carpintero</p></li>
                 <li><img src="img/slider/index/observadores-ciudad.jpg" width="1920px" height="856px" alt=" mujer mirando el cielo"> <p class="bajada-slider">Salida a la Reserva</p></li>
                 <li><img src="img/slider/index/observadores-frente.jpg" width="1920px" height="856px" alt="grupo fotografiando aves"> <p class="bajada-slider">Miembros COARECS</p></li>
@@ -32,8 +44,7 @@
             <div class="pastilla-slider">
                 <h1>Club de Observadores de Aves de<br>la Reserva Ecológica Costanera Sur</h1>
                 <p>Sumergite en las pasarelas de la reserva y<br>fotografía a las diversas aves</p>
-            </div>
-            
+            </div>            
         </div>
 
         <!--Novedades-->
@@ -264,8 +275,7 @@
             <ul class="redes">
                 <li><p>Seguinos en redes:</p></li>
                 <li><a href="https://www.instagram.com/coarecs/" target="_blank"><img src="img/svg/ig.svg" alt="instagram"></a></li>
-                <li><a href="mantenimiento.html"><img src="img/svg/x.svg" alt="tw"></a></li>
-                <li><a href="mantenimiento.html"><img src="img/svg/youtube.svg" alt="youtube"></a></li>
+                <li><a href="https://www.youtube.com/watch?v=ebSASzNQS1Q" target="_blank"><img src="img/svg/youtube.svg" alt="youtube"></a></li>
                 <li><a href="https://www.facebook.com/grupocoarecs" target="_blank"><img src="img/svg/face.svg" alt="facebook"></a></li>
             </ul>
         </div>

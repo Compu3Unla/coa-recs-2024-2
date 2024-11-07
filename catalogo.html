@@ -8,7 +8,7 @@
 <body>
     <header> <!-- Empiezo con header y footer asi puedo adelantar algo-->
         <nav class= "botonera">
-            <a href=index.html ><img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo" class="isologo"></a>
+            <a href="index.html"><img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo" class="isologo"></a>
             <ul>
                 <li><a href= "sobrenosotros.html">Sobre nosotros</a></li>
                 <li><a href="visita-la-recs.html">Visitá la reserva</a></li>
@@ -19,7 +19,7 @@
     </header>
     <main>
         <div class="slider-general">
-            <ul class="slide-automatico">
+            <ul class="slide-portada">
                 <li><img src="img/slider/catalogo/patos-volando.jpg" width="1920px" height="856px" alt="patos-volando"> <p class="bajada-slider">Bandada de patos</p></li>
                 <li><img src="img/slider/catalogo/nido-hornero.jpg" width="1920px" height="856px" alt="nido-hornero"> <p class="bajada-slider">Nido de hornero</p></li>
                 <li><img src="img/slider/catalogo/cotorras.jpg" width="1920px" height="856px" alt="cotorras"> <p class="bajada-slider">Bandada de cotorras</p></li>
@@ -339,7 +339,7 @@
                 </div>
                 <div class="nombrepajaro">
                     <h3>Carpintero Real</h3>
-                    <input type="checkbox" id="checkboxInput">
+                    <input type="checkbox" id="checkboxnput">
                         <label for="checkboxInput" class="toggleSwitch">
                     <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
                     <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
@@ -353,10 +353,13 @@
                 </div>
             </div>
         </div>
-        <!-------------------------------------------------------fin de tercer fila-->
-            <div class="registros">
-                <p>¿Lograste registrar alguno?<br>Compartilo utilizando el hashtag #COARECS</p>
-            </div>
+        
+        <aside class="registros">
+            <p>¿Lograste registrar alguno?<br>Compartilo utilizando el hashtag #COARECS</p>
+        </aside>
+    </main>
+
+    <!--Pie de pagina-->
     <footer>
         <div>
             <img src="img/svg/logogeneral.svg" width="415px" height="186px" alt="logo+titulo">
@@ -377,13 +380,12 @@
         </div>
         <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.866986592482!2d-58.354782323360894!3d-34.60752485770075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3351f97fbdf97%3A0xc0a4d539dc2254f!2sReserva%20Ecol%C3%B3gica%20Costanera%20Sur!5e0!3m2!1ses-419!2sar!4v1729278855101!5m2!1ses-419!2sar" width="550px" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="redes">
-                <p>Seguinos en redes:</p>
-                <a href="https://www.instagram.com/coarecs/" target="_blank"><img src="img/svg/ig.svg" alt="instagram"></a>
-                <a href="mantenimiento.html"><img src="img/svg/x.svg" alt="tw"></a>
-                <a href="mantenimiento.html"><img src="img/svg/youtube.svg" alt="youtube"></a>
-                <a href="https://www.facebook.com/grupocoarecs" target="_blank"><img src="img/svg/face.svg" alt="facebook"></a>
-            </div>
+            <ul class="redes">
+                <li><p>Seguinos en redes:</p></li>
+                <li><a href="https://www.instagram.com/coarecs/" target="_blank"><img src="img/svg/ig.svg" alt="instagram"></a></li>
+                <li><a href="https://www.youtube.com/watch?v=ebSASzNQS1Q" target="_blank"><img src="img/svg/youtube.svg" alt="youtube"></a></li>
+                <li><a href="https://www.facebook.com/grupocoarecs" target="_blank"><img src="img/svg/face.svg" alt="facebook"></a></li>
+            </ul>
         </div>
     </footer>
 </body>

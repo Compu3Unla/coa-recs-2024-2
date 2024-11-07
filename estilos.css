@@ -17,7 +17,7 @@
     height: auto;
     overflow: hidden;
 }
-.slide {
+.slide-portada {
     display: flex;
     animation: slider 16s infinite ease-in-out;
     width: 400%;
@@ -52,7 +52,7 @@
     position: absolute;
     bottom: 10px;
     padding-left: 120px;
-    bottom: 50px;
+    bottom: 25px;
 }
 
 .pastilla-slider {
@@ -74,7 +74,7 @@
     color: white;
 }
 
-/*botonera*/
+/* -------------------------- botonera -------------------------*/
 .botonera {
     display: flex;
     justify-content: space-between;
@@ -101,33 +101,95 @@
 .botonera li:hover {
     background-color:#A0B210;
 }
-/* estilos de H */
+/* ------------------- estilos de H ------------------- */
 h1 {
-    font-size: 1.5em;
-    color: #285B4C;
+    font-size: 2em;
+    color: #fff;
     font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+} /* solo titulo slider general*/
+
+h2 {
+    color: #285B4C;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding: 10px 0px;
+    padding: 0px 0px 30px 120px;
 }
 
 h4 {
     font-size: 0.7em;
     color: #F6EDD9;
     font-weight: 500;
-}
+} /*footer*/
 
 h4:hover {
     color: #A0B210;
-}
-
-h2 {
-    color: #285B4C;
-    font-weight: 600;
-    font-size: 1em;
-    padding: 10px 0px;
-}
+} /*footer*/
 
 h5 {
     font-size: 3em;
 } /*titulo + grande*/
+
+/* ----------------------- BOTONES --------------------*/
+.botones-pdf a {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #285B4C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #F6EDD9;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+.botones-pdf a:hover {
+    background-color: #A0B210;
+}
+
+/*------------ CONTENEDOR CREMITA ------------- */
+.container{
+    display: flex;
+    gap: 50px;
+    align-items: flex-end;
+    margin: 50px 0px;
+}
+.container-cremita {
+    background-color: #F6EDD9;
+    max-width: 950px;
+    max-height: fit-content;
+    border-bottom-right-radius: 100px;
+    padding: 30px 50px 30px 120px;
+
+}
+
+.container-cremita h2 {
+    padding: 0px 0px 10px 0px;
+}
+
+/* ------------------------- WHATSAPP -------------------*/
+.btn-flotante{
+    z-index: 1;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 15px solid #20B038;
+    background-color: #20B038;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animación al pasar el mouse */
+.btn-flotante:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
 
 /* ------------------------ INDEX ----------------------*/
 
@@ -540,32 +602,15 @@ footer{
     width: 50%;
     padding: 10px;
     margin: 40px 0px;
+    
 }
 .registros{
     display: flex;
     justify-content: center;
 }
-/*---------------------------------------------------fin de registrar*/
-.btn-flotante{
-    z-index: 1;
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    cursor: pointer;
-    border-radius: 400px;
-    border: 15px solid #20B038;
-    background-color: #20B038;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    /* Animación al pasar el mouse */
-.btn-flotante:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
-}
-/*-------------------------------------------------------boton flotante wpp*/
 
-/* la-reserva*/
 
+/* -------------------- la-reserva ---------------- */
 video {
     border-bottom-right-radius: 400px;
 }
@@ -582,10 +627,6 @@ video {
     margin-top: 15px;
 }
 
-.secciones-ubicacion h1 {
-    padding-left: 120px;
-}
-
 .secciones-ubicacion , .mapa-recs , .secciones-circuitos , .secciones-consejos , .secciones-recomendaciones {
     padding: 60px 0px;
 }
@@ -599,10 +640,6 @@ video {
     background-repeat: no-repeat;
     background-position: center;
     padding: 120px;
-}
-
-.secciones-consejos h1 {
-    color: #F6EDD9;
 }
 
 .secciones-consejos ul {
@@ -655,25 +692,6 @@ video {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.botones-recomendaciones a {
-    width: 300px;
-    height: 50px;
-    border-radius: 25px;
-    background-color: #285B4C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: #F6EDD9;
-    padding: 10px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 25px 0px;
-}
-
-.botones-recomendaciones a:hover {
-    background-color: #A0B210;
 }
 
 /*-----------------------------------------------------------ANTO*/
@@ -1064,10 +1082,11 @@ input {
 .info-circuitos {
     background-color: #F6EDD9;
     padding: 25px 15px 15px 15px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-radius: 0px 0px 25px 25px;
+    width: 100%;
 }
 .circuitos h2 {
+    padding: 0px;
     color: #F6EDD9;
     background-color: #285B4C;
     border-radius: 25px;
@@ -1160,8 +1179,8 @@ input {
 
 /*-----------------------------------------------------ESTO ES DE ANTO*/
 
-/*-----------------------------------------SLIDER INFINITO*/
-.slider-general .h2-nuestrosmiembros{ /*esta compitiendo con el h2 general. lo llame en cascada y nada*/
+/* SLIDER COMENTARIOS */
+.slider-comentarios .h2-nuestrosmiembros{ 
     color: #285B4C;
     font-weight: 600;
     font-size: 1em;
@@ -1170,25 +1189,21 @@ input {
     padding-top: 200px; 
     margin-bottom: 20px; 
 }
-.slider-general{
+.slider-comentarios{
     overflow: hidden;
+    margin: 50px 0px;
 }
-.slider-general .amigoscoa h1{
+.slider-comentarios .amigoscoa h1{
     padding: 200px 60px 60px;
 }
-.slider-general .slide-track{
+.slider-comentarios .slide-track{
     display: flex;
     animation: scroll 50s linear infinite;
     width: calc(1000px * 14);
     -webkit-animation: scroll 50s linear infinite;
-    padding: 20px 0px 200px 0px;
+    gap: 80px;
 }
-.slider-general .slide-general{
-    width: 2000px;
-}
-.slider-general .slide-general img{
-    width: 100%;
-}
+
 @keyframes scroll{
     0%{
         transform: translate(0);
@@ -1211,7 +1226,7 @@ footer{
 }
 .redes {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
     padding: 15px 0px;
 }
@@ -1243,76 +1258,9 @@ footer{
     font-weight: 400;
 }
 
-/*------------------------------------------------SECCION SOBRE NOSOTROS*/
-/*-------------------------------------------boton flotante*/
-.btn-flotante{
-    z-index: 1;
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    cursor: pointer;
-    border-radius: 400px;
-    border: 15px solid #20B038;
-    background-color: #20B038;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-/* Animación al pasar el mouse */
-.btn-flotante:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
-}
-/*-------------------------------------------SLIDER INFINITO DE SOBRE NOSOTROS cabecera*/
 
 
-/*-------------------------------------------------------------SLIDER*/
-
-/*-------------------------------------------que es coa*/
-.container{
-    display: inline-flex;
-    padding: 100px 0px 0px 0px
-}
-.text-content{
-    background-color: #F6EDD9;
-    width: 950px;
-    height: 300px;
-    border-bottom-right-radius: 100px;
-    padding: 5px 50px 5px 120px;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.text-content h2 {
-    color: #285B4C;
-    font-size: 1.5em;
-}
-.text-content p {
-    font-size: 1em;
-    line-height: 1.8em;
-}
-.botones-coa-sobre-nosotros {
-    margin-left: 500px;
-    margin-top: 150px;
-}
-.botones-coa-sobre-nosotros a{
-    width: 300px;
-    height: 50px;
-    border-radius: 25px;
-    background-color: #285B4C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: #F6EDD9;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 25px 0px;
-    gap: 50px;
-}
-.botones-coa-sobre-nosotros a:hover {
-    background-color: #A0B210;
-}
-
-/*---------------------------------------------------             LINEA DE TIEMPO*/
+/* LINEA DE TIEMPO */
 .linea_de_tiempo{
     background-color: #285B4C;
 }
@@ -1322,7 +1270,7 @@ footer{
     padding: 60px 120px;
     z-index: 10;
 }
-.seccion-linea h1 {
+.seccion-linea h2 {
     color: #F6EDD9;
     z-index: 10;
 }
