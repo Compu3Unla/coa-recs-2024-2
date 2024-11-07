@@ -590,10 +590,15 @@ video {
     display: flex;
     justify-content: center;
 }
-.secciones-consejos {
+
+.consejos {
     background-image: url('img/la-reserva/fondo-onda-verde.png');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
+}
+
+.secciones-consejos {
     padding: 120px;
 }
 
