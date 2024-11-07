@@ -834,7 +834,7 @@ input {
 .g-circuito img:hover {
     transform: scale(1.1);
 }
-/* galeria */
+/* galeria circuitos */
 #galeria{
     display: none;
     width: 100%;
@@ -1132,11 +1132,20 @@ footer{
 }
 /*-------------------------------------------------pop up del index */
 /* Checkbox oculto para controlar el pop-up */
+#galeria-popup{
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    justify-content: space-evenly;
+    /* padding-bottom: 50px;*/
+}
 #popup-toggle {
     display: none;
     z-index: 10;
 }
 .popup-overlay {
+    z-index: 10;
     position: fixed;
     width: 100vw;
     padding-top: 50px;
@@ -1147,15 +1156,14 @@ footer{
     visibility: visible;
     transition:  0.3s ease, visibility 0.3s ease;
 }
-.popup {
+.popup-index {
     background: #18322a;
     padding: 60px;
     border-radius: 18px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
 }
-.popup h2 {
+.popup-index h2 {
     background: #f5f1dc;
     color: #18322a;
     padding: 10px;
@@ -1163,17 +1171,10 @@ footer{
     font-size: 1.5em;
     margin: 0;
 }
-.close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #A0B210;
-    text-decoration: none;
+.close-popup-index {
     cursor: pointer;
 }
-.close:hover {
+.close-popup-index:hover {
     color: #9fb21072;
 }
 /* Mostrar el overlay cuando tiene la clase 'active' */
@@ -1190,7 +1191,6 @@ footer{
     padding: 20px;
     border-radius: 8px;
     color: #f5f1dc;
-    font-family: Arial, sans-serif;
 }   
 .day-name {
     font-weight: bold;
