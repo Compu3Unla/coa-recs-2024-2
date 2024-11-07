@@ -40,80 +40,110 @@
                 <div class="card">
                     <img src="img/cards-pajaros/pato-capuchino.jpg" width="360px" height="516px" alt="pato-capuchino">
                     <div class="card__contenido">
-                        <p class="card__descripcion">Mide entre 37 a 42 cm de longitud.</p>
+                        <p class="card__descripcion">Mide de 37 a 42 cm.</p>
                         <p class="card__descripcion">Se alimenta de semillas y de plantas acuáticas. Complementa su dieta con pequeños invertebrados, artrópodos e insectos.</p>
-                            <p class="card__descripcion">Su distribución geográfica se extiende por América del Sur.</p>
+                        <p class="card__descripcion">Su distribución geográfica se extiende por América del Sur.</p>
                         <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
                     </div>
                 </div>
                 <div class="nombrepajaro">
                     <h3>Pato Capuchino</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
+                    <!-- Ocultamos los controles del audio -->
+                    <audio id="audioPato" style="display: none;">
+                        <source src="img/audios/sonidodepato.mp3" type="audio/mpeg">
+                        <source src="img/audios/sonidodepato.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <input type="checkbox" id="checkboxPato" class="hidden">
+                    <label for="checkboxPato" class="toggleSwitch">
+                        <!-- SVG del altavoz que hará clic para reproducir/pausar el sonido -->
+                        <div class="speaker" onclick="toggleAudio('audioPato')">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                                <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                                <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                            </svg>
+                        </div>
+                        <div class="mute-speaker" onclick="toggleAudio('audioPato')" style="display: none;">
+                            <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                                <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                                <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                    </label>
                 </div>
             </div>
-            <!--card por pajaro-->
             <div class="cardpajaros">
                 <div class="card">
                     <img src="img/cards-pajaros/hornero.jpg" width="360px" height="516px" alt="hornero">
                     <div class="card__contenido">
                         <p class="card__descripcion">Mide entre 16 y 23 cm de longitud.</p>
                         <p class="card__descripcion">Se alimenta de insectos y consigue su alimento mientras camina por el suelo. Come principalmente grillos y mariposas.</p>
-                        <p class="card__descripcion">Es típico de América del Sur  y está presente en una amplia variedad de hábitats.</p>
+                        <p class="card__descripcion">Es típico de América del Sur y está presente en una amplia variedad de hábitats.</p>
                         <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
                     </div>
                 </div>
                 <div class="nombrepajaro">
                     <h3>Hornero</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
+                    <!-- Ocultamos los controles del audio -->
+                    <audio id="audioHornero" style="display: none;">
+                        <source src="img/audios/cantodehornero.mp3" type="audio/mpeg">
+                        <source src="img/audios/cantodehornero.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <input type="checkbox" id="checkboxHornero" class="hidden">
+                    <label for="checkboxHornero" class="toggleSwitch">
+                        <!-- SVG del altavoz que hará clic para reproducir/pausar el sonido -->
+                        <div class="speaker" onclick="toggleAudio('audioHornero')">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                                <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                                <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                            </svg>
+                        </div>
+                        <div class="mute-speaker" onclick="toggleAudio('audioHornero')" style="display: none;">
+                            <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                                <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                                <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                    </label>
                 </div>
             </div>
-            <!--card por pajaro-->
             <div class="cardpajaros">
                 <div class="card">
                     <img src="img/cards-pajaros/benteveo.jpg" width="360px" height="516px" alt="benteveo">
                     <div class="card__contenido">
                         <p class="card__descripcion">Mide entre 21 y 26 cm de longitud.</p>
-                        <p class="card__descripcion">Consume todo tipo de invertebrados, e insectos  y la complementa con algunas frutas, pequeños roedores y reptiles, e incluso peces.</p>
+                        <p class="card__descripcion">Consume todo tipo de invertebrados, e insectos y la complementa con algunas frutas, pequeños roedores y reptiles, e incluso peces.</p>
                         <p class="card__descripcion">Se distribuye desde el sur de Estados Unidos hasta el centro de Argentina.</p>
                         <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
                     </div>
                 </div>
                 <div class="nombrepajaro">
                     <h3>Benteveo</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
+                    <!-- Ocultamos los controles del audio -->
+                    <audio id="audioBenteveo" style="display: none;">
+                        <source src="img/audios/cantobenteveo.mp3" type="audio/mpeg">
+                        <source src="img/audios/cantobenteveo.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <input type="checkbox" id="checkboxBenteveo" class="hidden">
+                    <label for="checkboxBenteveo" class="toggleSwitch">
+                        <!-- SVG del altavoz que hará clic para reproducir/pausar el sonido -->
+                        <div class="speaker" onclick="toggleAudio('audioBenteveo')">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                                <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                                <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                            </svg>
+                        </div>
+                        <div class="mute-speaker" onclick="toggleAudio('audioBenteveo')" style="display: none;">
+                            <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                                <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                                <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                    </label>
                 </div>
             </div>
-            <!--card por pajaro-->
             <div class="cardpajaros">
                 <div class="card">
                     <img src="img/cards-pajaros/colibri-verde.jpg" width="360px" height="516px" alt="colibri">
@@ -126,21 +156,31 @@
                 </div>
                 <div class="nombrepajaro">
                     <h3>Colibri</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
+                    <!-- Ocultamos los controles del audio -->
+                    <audio id="audioColibri" style="display: none;">
+                        <source src="img/audios/cantopicaflor.mp3" type="audio/mpeg">
+                        <source src="img/audios/cantopicaflor.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <input type="checkbox" id="checkboxColibri" class="hidden">
+                    <label for="checkboxColibri" class="toggleSwitch">
+                        <!-- SVG del altavoz que hará clic para reproducir/pausar el sonido -->
+                        <div class="speaker" onclick="toggleAudio('audioColibri')">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                                <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                                <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                            </svg>
+                        </div>
+                        <div class="mute-speaker" onclick="toggleAudio('audioColibri')" style="display: none;">
+                            <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                                <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                                <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                    </label>
                 </div>
             </div>
         </div>
-        <!-------------------------------------------------------fin de primera fila-->
         <div class="cardcontenedor">
             <img class="banda" src="img/la-reserva/fondo-onda-verde.png" width="1920px" alt="banda-verde">
             <div class="cardpajaros">
@@ -149,26 +189,36 @@
                     <div class="card__contenido">
                         <p class="card__descripcion">Mide entre 55 y 60 cm de longitud.</p>
                         <p class="card__descripcion">Puede alimentarse de una variedad interesante de presas como palomas, ratas, sapos, peces, etc.</p>
-                            <p class="card__descripcion">El carancho vive al borde de los bosques y también se lo encuentra en ámbitos urbanos.</p>
+                        <p class="card__descripcion">El carancho vive al borde de los bosques y también se lo encuentra en ámbitos urbanos.</p>
                         <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
                     </div>
                 </div>
                 <div class="nombrepajaro">
                     <h3>Carancho</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
+                    <!-- Ocultamos los controles del audio -->
+                    <audio id="audioCarancho" style="display: none;">
+                        <source src="img/audios/cantocarancho.mp3" type="audio/mpeg">
+                        <source src="img/audios/cantocarancho.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <input type="checkbox" id="checkboxCarancho" class="hidden">
+                    <label for="checkboxCarancho" class="toggleSwitch">
+                        <!-- SVG del altavoz que hará clic para reproducir/pausar el sonido -->
+                        <div class="speaker" onclick="toggleAudio('audioCarancho')">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                                <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                                <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                            </svg>
+                        </div>
+                        <div class="mute-speaker" onclick="toggleAudio('audioCarancho')" style="display: none;">
+                            <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                                <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                                <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                    </label>
                 </div>
             </div>
-            <!--card por pajaro-->
             <div class="cardpajaros">
                 <div class="card">
                     <img src="img/cards-pajaros/chingolo.jpg" width="360px" height="516px" alt="chingolo">
@@ -181,73 +231,103 @@
                 </div>
                 <div class="nombrepajaro">
                     <h3>Chingolo</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
+                    <!-- Ocultamos los controles del audio -->
+                    <audio id="audioChingolo" style="display: none;">
+                        <source src="img/audios/cantochingolo.mp3" type="audio/mpeg">
+                        <source src="img/audios/cantochingolo.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <input type="checkbox" id="checkboxChingolo" class="hidden">
+                    <label for="checkboxChingolo" class="toggleSwitch">
+                        <!-- SVG del altavoz que hará clic para reproducir/pausar el sonido -->
+                        <div class="speaker" onclick="toggleAudio('audioChingolo')">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                                <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                                <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                            </svg>
+                        </div>
+                        <div class="mute-speaker" onclick="toggleAudio('audioChingolo')" style="display: none;">
+                            <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                                <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                                <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                    </label>
                 </div>
             </div>
-            <!--card por pajaro-->
             <div class="cardpajaros">
                 <div class="card">
                     <img src="img/cards-pajaros/jilguero.jpg" width="360px" height="516px" alt="jilguero">
                     <div class="card__contenido">
                         <p class="card__descripcion">Mide entre 13 y 15 cm de longitud.</p>
-                        <p class="card__descripcion">Semillas de gramíneas, y en menor medida insectos.</p>
+                        <p class="card__descripcion">Se alimenta de semillas de gramíneas, y en menor medida insectos.</p>
                         <p class="card__descripcion">Es un ave que se encuentra en una variedad de hábitats, incluyendo praderas, zonas agrícolas, matorrales y áreas semiabiertas.</p>
                         <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
                     </div>
                 </div>
                 <div class="nombrepajaro">
                     <h3>Jilguero</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
+                    <!-- Ocultamos los controles del audio -->
+                    <audio id="audioJilguero" style="display: none;">
+                        <source src="img/audios/cantojilguero.mp3" type="audio/mpeg">
+                        <source src="img/audios/cantojilguero.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <input type="checkbox" id="checkboxJilguero" class="hidden">
+                    <label for="checkboxJilguero" class="toggleSwitch">
+                        <!-- SVG del altavoz que hará clic para reproducir/pausar el sonido -->
+                        <div class="speaker" onclick="toggleAudio('audioJilguero')">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                                <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                                <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                            </svg>
+                        </div>
+                        <div class="mute-speaker" onclick="toggleAudio('audioJilguero')" style="display: none;">
+                            <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                                <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                                <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                    </label>
                 </div>
             </div>
-            <!--card por pajaro-->
             <div class="cardpajaros">
                 <div class="card">
                     <img src="img/cards-pajaros/caracolero.jpg" width="360px" height="516px" alt="caracolero">
                     <div class="card__contenido">
                         <p class="card__descripcion">Mide entre 36 y 48 cm de longitud.</p>
-                        <p class="card__descripcion">Alimentándose casi exclusivamente de caracoles acuáticos, especialmente los del género Pomácea.</p>
+                        <p class="card__descripcion">Alimentándose casi exclusivamente de caracoles acuáticos, especialmente los del género Pomácea</p>
                         <p class="card__descripcion">Se adapta perfectamente a los ambientes acuáticos de Argentina.</p>
                         <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
                     </div>
                 </div>
                 <div class="nombrepajaro">
                     <h3>Caracolero</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
+                    <!-- Ocultamos los controles del audio -->
+                    <audio id="audioCaracolero" style="display: none;">
+                        <source src="img/audios/cantocaracolero.mp3" type="audio/mpeg">
+                        <source src="img/audios/cantocaracolero.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <input type="checkbox" id="checkboxCaracolero" class="hidden">
+                    <label for="checkboxCaracolero" class="toggleSwitch">
+                        <!-- SVG del altavoz que hará clic para reproducir/pausar el sonido -->
+                        <div class="speaker" onclick="toggleAudio('audioCaracolero')">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                                <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                                <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                            </svg>
+                        </div>
+                        <div class="mute-speaker" onclick="toggleAudio('audioCaracolero')" style="display: none;">
+                            <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                                <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                                <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                    </label>
                 </div>
             </div>
         </div>
-        <!-------------------------------------------------------fin de segunda fila-->
         <div class="cardcontenedor">
             <div class="cardpajaros">
                 <div class="card">
@@ -255,26 +335,36 @@
                     <div class="card__contenido">
                         <p class="card__descripcion">Mide 19 cm de longitud total.</p>
                         <p class="card__descripcion">Se alimenta de semillas, frutos, insectos, desperdicios.</p>
-                            <p class="card__descripcion">En Argentina, desde el norte del país hasta Mendoza, La Pampa y Río Negro.</p>
+                        <p class="card__descripcion">En Argentina, desde el norte del país hasta Mendoza, La Pampa y Río Negro.</p>
                         <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
                     </div>
                 </div>
                 <div class="nombrepajaro">
                     <h3>Cardenal</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
+                    <!-- Ocultamos los controles del audio -->
+                    <audio id="audioCardenal" style="display: none;">
+                        <source src="img/audios/cantocardenal.mp3" type="audio/mpeg">
+                        <source src="img/audios/cantocardenal.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <input type="checkbox" id="checkboxCardenal" class="hidden">
+                    <label for="checkboxCardenal" class="toggleSwitch">
+                        <!-- SVG del altavoz que hará clic para reproducir/pausar el sonido -->
+                        <div class="speaker" onclick="toggleAudio('audioCardenal')">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                                <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                                <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                            </svg>
+                        </div>
+                        <div class="mute-speaker" onclick="toggleAudio('audioCardenal')" style="display: none;">
+                            <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                                <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                                <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                    </label>
                 </div>
             </div>
-            <!--card por pajaro-->
             <div class="cardpajaros">
                 <div class="card">
                     <img src="img/cards-pajaros/calandria.jpg" width="360px" height="516px" alt="calandria">
@@ -287,20 +377,30 @@
                 </div>
                 <div class="nombrepajaro">
                     <h3>Calandria</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
+                    <!-- Ocultamos los controles del audio -->
+                    <audio id="audioCalandria" style="display: none;">
+                        <source src="img/audios/cantocalandria.mp3" type="audio/mpeg">
+                        <source src="img/audios/cantocalandria.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <input type="checkbox" id="checkboxCalandria" class="hidden">
+                    <label for="checkboxCalandria" class="toggleSwitch">
+                        <!-- SVG del altavoz que hará clic para reproducir/pausar el sonido -->
+                        <div class="speaker" onclick="toggleAudio('audioCalandria')">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                                <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                                <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                            </svg>
+                        </div>
+                        <div class="mute-speaker" onclick="toggleAudio('audioCalandria')" style="display: none;">
+                            <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                                <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                                <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                    </label>
                 </div>
             </div>
-            <!--card por pajaro-->
             <div class="cardpajaros">
                 <div class="card">
                     <img src="img/cards-pajaros/lechuzon.jpg" width="360px" height="516px" alt="lechuzon">
@@ -313,23 +413,33 @@
                 </div>
                 <div class="nombrepajaro">
                     <h3>Lechuzón Orejudo</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
+                    <!-- Ocultamos los controles del audio -->
+                    <audio id="audioLechuzon" style="display: none;">
+                        <source src="img/audios/cantolechuzon.mp3" type="audio/mpeg">
+                        <source src="img/audios/cantolechuzon.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <input type="checkbox" id="checkboxLechuzon" class="hidden">
+                    <label for="checkboxLechuzon" class="toggleSwitch">
+                        <!-- SVG del altavoz que hará clic para reproducir/pausar el sonido -->
+                        <div class="speaker" onclick="toggleAudio('audioLechuzon')">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                                <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                                <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                            </svg>
+                        </div>
+                        <div class="mute-speaker" onclick="toggleAudio('audioLechuzon')" style="display: none;">
+                            <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                                <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                                <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                    </label>
                 </div>
             </div>
-            <!--card por pajaro-->
             <div class="cardpajaros">
                 <div class="card">
-                    <img src="img/cards-pajaros/carpitero.jpg" width="360px" height="516px" alt="carpitero">
+                    <img src="img/cards-pajaros/carpitero.jpg" width="360px" height="516px" alt="carpintero">
                     <div class="card__contenido">
                         <p class="card__descripcion">Mide entre 30 y 35 cm de longitud.</p>
                         <p class="card__descripcion">Consume hormigas, termitas y, en ocasiones, frutas y semillas.</p>
@@ -339,17 +449,28 @@
                 </div>
                 <div class="nombrepajaro">
                     <h3>Carpintero Real</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
+                    <!-- Ocultamos los controles del audio -->
+                    <audio id="audioCarpintero" style="display: none;">
+                        <source src="img/audios/cantocarpintero.mp3" type="audio/mpeg">
+                        <source src="img/audios/cantocarpintero.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <input type="checkbox" id="checkboxCarpintero" class="hidden">
+                    <label for="checkboxCarpintero" class="toggleSwitch">
+                        <!-- SVG del altavoz que hará clic para reproducir/pausar el sonido -->
+                        <div class="speaker" onclick="toggleAudio('audioCarpintero')">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                                <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                                <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                            </svg>
+                        </div>
+                        <div class="mute-speaker" onclick="toggleAudio('audioCarpintero')" style="display: none;">
+                            <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                                <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                                <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                            </svg>
+                        </div>
+                    </label>
                 </div>
             </div>
         </div>
@@ -387,4 +508,22 @@
         </div>
     </footer>
 </body>
+<script>
+    function toggleAudio(audioId) {
+    var audio = document.getElementById(audioId);
+    var speakerIcon = audio.nextElementSibling.querySelector('.speaker');
+    var muteIcon = audio.nextElementSibling.querySelector('.mute-speaker');
+
+    // Reproducir o pausar el audio
+    if (audio.paused) {
+        audio.play();
+        speakerIcon.style.display = 'none';  // Ocultar el ícono del altavoz
+        muteIcon.style.display = 'block';    // Mostrar el ícono de mute
+    } else {
+        audio.pause();
+        speakerIcon.style.display = 'block'; // Mostrar el ícono del altavoz
+        muteIcon.style.display = 'none';     // Ocultar el ícono de mute
+    }
+}
+</script>
 </html>
