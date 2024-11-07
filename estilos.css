@@ -480,6 +480,13 @@ footer{
     font-weight: 400;
 }
 /*----------------------------------------------------inicio de catálogo parajos*/
+/* .catalogo-principal {
+    padding: 0px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+} */
+
 .cardcontenedor{
     display: flex;
     justify-content: space-between;
