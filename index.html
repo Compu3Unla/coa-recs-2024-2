@@ -4,11 +4,25 @@
     <meta charset="utf-8"/>
     <title>coarecs-g4</title>
     <link href="estilos.css" rel="stylesheet" type="text/css"/>
+
+    <!--java para Galeria-->
+<script>
+    function cambiarDisplay(visibilidadNueva){
+        document.getElementById("galeria").style.display = visibilidadNueva
+    }
+    function mostrarGaleria(){
+        cambiarDisplay('flex')
+    }
+    function ocultarGaleria(){
+        cambiarDisplay('none')
+    }
+</script>
+
 </head>
 <body>
     <header>
         <nav class= "botonera">
-            <a href=index.html ><img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo" class="isologo"></a>
+            <a href="index.html"><img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo" class="isologo"></a>
             <ul>
                 <li><a href= "sobrenosotros.html">Sobre nosotros</a></li>
                 <li><a href="visita-la-recs.html">Visitá la reserva</a></li>
@@ -19,8 +33,22 @@
     </header>
     
     <main>
-        <!--boton flotante-->
-        <a href="https://whatsapp.com/channel/0029Vaj1EEw1Hsq1kCZibK2K" target="_blank"><button class="btn-flotante"><img src="img/svg/wpp.png" width="49px" height="49px" alt="whatsapp"></button></a>
+        <!--slide general-->
+        <div class="slider-general">
+            <ul class="slide-portada">
+                <li><img src="img/slider/index/carpintero.jpg" width="1920px" height="856px" alt="pato capuchino"><p class="bajada-slider">Pájaro Carpintero</p></li>
+                <li><img src="img/slider/index/observadores-ciudad.jpg" width="1920px" height="856px" alt=" mujer mirando el cielo"> <p class="bajada-slider">Salida a la Reserva</p></li>
+                <li><img src="img/slider/index/observadores-frente.jpg" width="1920px" height="856px" alt="grupo fotografiando aves"> <p class="bajada-slider">Miembros COARECS</p></li>
+                <li><img src="img/slider/index/pato-capuchino.jpg" width="1920px" height="856px" alt="hombre con camara fotográfica"><p class="bajada-slider">Pato Capuchino</p></li>
+            </ul>
+            
+            <div class="pastilla-slider">
+                <h1>Club de Observadores de Aves de<br>la Reserva Ecológica Costanera Sur</h1>
+                <p>Sumergite en las pasarelas de la reserva y<br>fotografía a las diversas aves</p>
+            </div>            
+        </div>
+
+
         <!--Novedades-->
         <section class="novedades">            
             <h1>Novedades</h1>
@@ -49,139 +77,179 @@
             </div>
         </section>
 
-        <!-- guia de aves -->
-<!-----------------------------------------------------------------------------------boton flotante-->
+        <!-- whatsapp fixed -->
         <a href="https://whatsapp.com/channel/0029Vaj1EEw1Hsq1kCZibK2K" target="_blank"><button class="btn-flotante"><img src="img/svg/wpp.png" width="49px" height="49px" alt="whatsapp"></button></a>
-        <!--card por pajaro-->
-        <div class="cardcontenedor">
-            <div class="cardpajaros">
-                <div class="card">
-                    <img src="img/cards-pajaros/pato-capuchino.jpg" width="360px" height="516px" alt="pato-capuchino">
-                    <div class="card__contenido">
-                        <p class="card__descripcion">Mide de 37 a 42 cm.</p>
-                        <p class="card__descripcion">Se alimenta de semillas y de plantas acuáticas. Complementa su dieta con pequeños invertebrados, artrópodos e insectos.</p>
-                            <p class="card__descripcion">Su distribución geográfica se extiende por América del Sur.</p>
-                        <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
-                    </div>
-                </div>
-                <div class="nombrepajaro">
-                    <h3>Pato Capuchino</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
-                </div>
-            </div>
-            <!--card por pajaro-->
-            <div class="cardpajaros">
-                <div class="card">
-                    <img src="img/cards-pajaros/hornero.jpg" width="360px" height="516px" alt="hornero">
-                    <div class="card__contenido">
-                        <p class="card__descripcion">Mide entre 16 y 23 cm de longitud.</p>
-                        <p class="card__descripcion">Se alimenta de insectos y consigue su alimento mientras camina por el suelo. Come principalmente grillos y mariposas.</p>
-                        <p class="card__descripcion">Es típico de América del Sur  y está presente en una amplia variedad de hábitats.</p>
-                        <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
-                    </div>
-                </div>
-                <div class="nombrepajaro">
-                    <h3>Hornero</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
-                </div>
-            </div>
-            <!--card por pajaro-->
-            <div class="cardpajaros">
-                <div class="card">
-                    <img src="img/cards-pajaros/benteveo.jpg" width="360px" height="516px" alt="benteveo">
-                    <div class="card__contenido">
-                        <p class="card__descripcion">Mide entre 21 y 26 cm de longitud.</p>
-                        <p class="card__descripcion">Consume todo tipo de invertebrados, e insectos  y la complementa con algunas frutas, pequeños roedores y reptiles, e incluso peces.</p>
-                        <p class="card__descripcion">Se distribuye desde el sur de Estados Unidos hasta el centro de Argentina.</p>
-                        <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
-                    </div>
-                </div>
-                <div class="nombrepajaro">
-                    <h3>Benteveo</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
-                </div>
-            </div>
-            <!--card por pajaro-->
-            <div class="cardpajaros">
-                <div class="card">
-                    <img src="img/cards-pajaros/colibri-verde.jpg" width="360px" height="516px" alt="colibri">
-                    <div class="card__contenido">
-                        <p class="card__descripcion">Mide 9 cm de longitud; el pico es de 2 cm.</p>
-                        <p class="card__descripcion">Se alimenta principalmente de flores, utilizando su pico tubular.</p>
-                        <p class="card__descripcion">Vive en ambientes variados. Zonas boscosas, en matorrales, pastizales, jardines y parques.</p>
-                        <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
-                    </div>
-                </div>
-                <div class="nombrepajaro">
-                    <h3>Colibri</h3>
-                    <input type="checkbox" id="checkboxInput">
-                        <label for="checkboxInput" class="toggleSwitch">
-                    <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
-                    <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
-                    <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
-                    </svg></div>
-                    <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
-                    <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
-                    <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
-                    </svg></div>
-                        </label>
-                </div>
-            </div>
-        </div>
-        <div class="section-guia">
-            <a href="catalogo.html">Ver más</a>
-        </div>
 
-        <!--Preguntas-->
-        <section>
-            
+        <!-- cardx4 - catálogo -->
+        <section class="catalogo-index">
+            <div class="cards-index">
+                <div class="cardpajaros">
+                    <div class="card">
+                        <img src="img/cards-pajaros/pato-capuchino.jpg" width="360px" height="516px" alt="pato-capuchino">
+                        <div class="card__contenido">
+                            <p class="card__descripcion">Mide de 37 a 42 cm.</p>
+                            <p class="card__descripcion">Se alimenta de semillas y de plantas acuáticas. Complementa su dieta con pequeños invertebrados, artrópodos e insectos.</p>
+                                <p class="card__descripcion">Su distribución geográfica se extiende por América del Sur.</p>
+                            <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
+                        </div>
+                    </div>
+                    <div class="nombrepajaro">
+                        <h3>Pato Capuchino</h3>
+                        <input type="checkbox" id="checkboxInput">
+                            <label for="checkboxInput" class="toggleSwitch">
+                        <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                        <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                        <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                        </svg></div>
+                        <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                        <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                        <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                        </svg></div>
+                            </label>
+                    </div>
+                </div>
+                <!--card por pajaro-->
+                <div class="cardpajaros">
+                    <div class="card">
+                        <img src="img/cards-pajaros/hornero.jpg" width="360px" height="516px" alt="hornero">
+                        <div class="card__contenido">
+                            <p class="card__descripcion">Mide entre 16 y 23 cm de longitud.</p>
+                            <p class="card__descripcion">Se alimenta de insectos y consigue su alimento mientras camina por el suelo. Come principalmente grillos y mariposas.</p>
+                            <p class="card__descripcion">Es típico de América del Sur  y está presente en una amplia variedad de hábitats.</p>
+                            <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
+                        </div>
+                    </div>
+                    <div class="nombrepajaro">
+                        <h3>Hornero</h3>
+                        <input type="checkbox" id="checkboxinput">
+                            <label for="checkboxInput" class="toggleSwitch">
+                        <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                        <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                        <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                        </svg></div>
+                        <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                        <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                        <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                        </svg></div>
+                            </label>
+                    </div>
+                </div>
+                <!--card por pajaro-->
+                <div class="cardpajaros">
+                    <div class="card">
+                        <img src="img/cards-pajaros/benteveo.jpg" width="360px" height="516px" alt="benteveo">
+                        <div class="card__contenido">
+                            <p class="card__descripcion">Mide entre 21 y 26 cm de longitud.</p>
+                            <p class="card__descripcion">Consume todo tipo de invertebrados, e insectos  y la complementa con algunas frutas, pequeños roedores y reptiles, e incluso peces.</p>
+                            <p class="card__descripcion">Se distribuye desde el sur de Estados Unidos hasta el centro de Argentina.</p>
+                            <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
+                        </div>
+                    </div>
+                    <div class="nombrepajaro">
+                        <h3>Benteveo</h3>
+                        <input type="checkbox" id="checkboxInput">
+                            <label for="checkboxInput" class="toggleSwitch">
+                        <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                        <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                        <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                        </svg></div>
+                        <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                        <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                        <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                        </svg></div>
+                            </label>
+                    </div>
+                </div>
+                <!--card por pajaro-->
+                <div class="cardpajaros">
+                    <div class="card">
+                        <img src="img/cards-pajaros/colibri-verde.jpg" width="360px" height="516px" alt="colibri">
+                        <div class="card__contenido">
+                            <p class="card__descripcion">Mide 9 cm de longitud; el pico es de 2 cm.</p>
+                            <p class="card__descripcion">Se alimenta principalmente de flores, utilizando su pico tubular.</p>
+                            <p class="card__descripcion">Vive en ambientes variados. Zonas boscosas, en matorrales, pastizales, jardines y parques.</p>
+                            <p class="card__descripcion">Estado de Conservación: Preocupación menor.</p>
+                        </div>
+                    </div>
+                    <div class="nombrepajaro">
+                        <h3>Colibri</h3>
+                        <input type="checkbox" id="checkboxInput">
+                            <label for="checkboxInput" class="toggleSwitch">
+                        <div class="speaker"><svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                        <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"></path>
+                        <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"></path>
+                        </svg></div>
+                        <div class="mute-speaker"><svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                        <path d="m39,14-17,15H6V48H22l17,15z" fill="#fff" stroke-linejoin="round"></path>
+                        <path d="m49,26 20,24m0-24-20,24" fill="#fff" stroke-linecap="round"></path>
+                        </svg></div>
+                            </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vermas">
+                <a href="catalogo.html">Ver más</a>
+            </div>
+        </section>
+
+        <!-- Preguntas frecuentes -->
+        <section class="preguntas">
+            <details>
+                <summary>
+                    <h1>¿Qué aves podemos ver hoy en la Recs?</h1>
+                    <button class="flecha-preg">
+                        <img src="img/svg/flecha-preguntas.svg" width="25px" height="12px">
+                    </button>
+                </summary>
+                <ul class="respuesta">
+                    <li>Podrás observar mistos (Sicalis luteola), piquito de plata (Hymenops perspicillatus),tacuarita azul (Polioptila dumicola), jilgueros (Sicalis flaveola), calandrias (Mimus saturninus), carpinteros reales (Colaptes melanochloros), hocó colorado (Tigrisoma linetaum), picaflor bronceado (Hylocharis chrysura), cardenales (Paroaria coronata) y tijeretas (Tyrannus savana), por destacar a algunos.</li>
+
+                    <li>En sus lagunas, también pueden observarse especies acuáticas como el chajá (Chauna torquata), la jacana (Jacana jacana) y la maca común (Rollandia rolland).</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>
+                    <h1>¿Cómo llego a la Recs?</h1>
+                    <button class="flecha-preg">
+                        <img src="img/svg/flecha-preguntas.svg" width="25px" height="12px">
+                    </button>
+                </summary>
+                <ul class="respuesta">
+                    <li>Las siguentes líneas de transporte tienen rutas que pasan cerca de la RECS:</li>
+                    <li><h2>Colectivo:</h2> 105, 146, 152, 180, 2.</li>
+                    <li><h2>Tren:</h2> Belgrano Norte, Mitre, Mitre, Roca, San Martín.</li>
+                    <li><h2>Subte:</h2> A, B, D, E.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>
+                    <h1>¿Dónde descargo mi checklist de aves?</h1>
+                    <button class="flecha-preg">
+                        <img src="img/svg/flecha-preguntas.svg" width="25px" height="12px">
+                    </button>
+                </summary>
+                <p>Podes descargarlo desde la sección <a href="visita-la-recs.html">“visitá la reserva”</a></p>
+            </details>
         </section>
 
         <!-- datos -->
         <section class="grid">
-            <article class="grid-pasarelas"><h3>3</h3><p>Pasarelas</p></article>
-            <article class="historia"><h3>+30</h3><p>Años de historia</p></article>
+            <article class="grid-pasarelas"><h5>3</h5><p>Pasarelas</p></article>
+            <article class="historia"><h5>+30</h5><p>Años de historia</p></article>
             <img class="img-3" src="img/index/pajaros.jpg" width="388px" height="250px" alt="duo de pajaros">
             <img class="img-4" src="img/index/fotografo.jpg" width="388px" height="250px" alt="fotografo perfil">
             <img class="img-1" src="img/index/pasarelas.jpg" width="388px" height="250px" alt="pasarelas datos">            
             <img class="img-2" src="img/index/vista.jpg" width="388px" height="250px" alt="persona de espaldas mirando">
-            <article class="grid-pajaros"><h3>+200</h3><p>Especies</p></article>
-            <article class="grid-fotog"><h3>72</h3><p>Fotógrafos</p></article>
+            <article class="grid-pajaros"><h5>+200</h5><p>Especies</p></article>
+            <article class="grid-fotog"><h5>72</h5><p>Fotógrafos</p></article>
         </section>
 
         <!-- img + frase -->
         <section class="frase">
-            <h3>Junto a vos, protegemos nuestras<br>aves silvestres y la naturaleza</h3>
+            <h5>Junto a vos, protegemos nuestras<br>aves silvestres y la naturaleza</h5>
         </section>
     </main>
 
@@ -212,8 +280,89 @@
                 <a href="https://www.youtube.com/watch?v=ebSASzNQS1Q" target="_blank"><img src="img/svg/youtube.svg" alt="youtube"></a>
                 <a href="https://www.facebook.com/grupocoarecs" target="_blank"><img src="img/svg/face.svg" alt="facebook"></a>
             </div>
+
         </div>
     </footer>
-    <script src="js/acordeon.js"></script>
+
+    <section>
+        <!-- Checkbox oculto para controlar el estado del pop-up -->
+        <input type="checkbox" id="popup-toggle" checked/>
+        <!-- Pop-up Overlay -->
+        <div class="popup-overlay">
+            <div class="popup" id="galeria">
+                <img class="close" src="img/x-circle.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
+                <!-- Iconos superiores -->
+                <div class="icons">
+                    <img src="img/tramahoja.svg" alt="vector de hoja" class="icon">
+                    <img src="img/tramaplanta.svg" alt="vector de planta" class="icon">
+                    <img src="img/tramaestrella.svg" alt="vector de estrella" class="icon">
+                    <img src="img/tramagotaota.svg" alt="vector de gota" class="icon">
+                    <img src="img/tramaflor.svg" alt="vector de flor" class="icon">
+                    <img src="img/tramadoshojas.svg" alt="vector de hojas" class="icon">
+                </div>
+                <!-- Encabezado -->
+                <h2>PRÓXIMAS SALIDAS</h2>
+                <!-- Calendario -->
+                <div class="calendar">
+                    <div class="day-name">Lun</div>
+                    <div class="day-name">Mar</div>
+                    <div class="day-name">Mier</div>
+                    <div class="day-name">Juev</div>
+                    <div class="day-name">Vier</div>
+                    <div class="day-name">Sab</div>
+                    <div class="day-name">Dom</div>
+                    <div class="day">01</div>
+                    <div class="day highlight">02</div>
+                    <div class="day">03</div>
+                    <div class="day">04</div>
+                    <div class="day">05</div>
+                    <div class="day">06</div>
+                    <div class="day highlight">07</div>
+                    <div class="day">08</div>
+                    <div class="day">09</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                    <div class="day">31</div>
+                    <div class="day">01</div>
+                    <div class="day">02</div>
+                    <div class="day">03</div>
+                    <div class="day">04</div>
+                </div>
+                <!-- Advertencia -->
+                <div class="alert">
+                    ATENCIÓN<br>
+                    Toda actividad dentro de la reserva se suspende por fuertes lluvias
+                </div>
+                <!-- Iconos inferiores -->
+                <div class="icons">
+                    <img src="img/tramahoja.svg" alt="vector de hoja" class="icon">
+                    <img src="img/tramaplanta.svg" alt="vector de planta" class="icon">
+                    <img src="img/tramaestrella.svg" alt="vector de estrella" class="icon">
+                    <img src="img/tramagotaota.svg" alt="vector de gota" class="icon">
+                    <img src="img/tramaflor.svg" alt="vector de flor" class="icon">
+                    <img src="img/tramadoshojas.svg" alt="vector de hojas" class="icon">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
