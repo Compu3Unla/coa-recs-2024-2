@@ -4,9 +4,10 @@
     <meta charset="utf-8"/>
     <title>coarecs-g4</title>
     <link href="estilos.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
 </head>
 <body>
-    <header> <!-- Empiezo con header y footer asi puedo adelantar algo-->
+    <header>
         <nav class= "botonera">
             <a href="index.html"><img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo" class="isologo"></a>
             <ul>
@@ -14,10 +15,29 @@
                 <li><a href="visita-la-recs.html">Visitá la reserva</a></li>
                 <li><a href="inscripcion.html">Quiero ser COA</a></li>
             </ul>
-            <img src="img/svg/advertencias.svg" width="50px" height="50px" alt="advertencia"> <!--genere una nueva carpeta en IMG que se llama "svg"-->
-        </nav>                
+            <!--input oculto-->
+            <div class="alert-container">
+                <input type="checkbox" id="alert-toggle" class="alert-toggle">
+                <label for="alert-toggle" class="alert-button">
+                    <img src="img/svg/advertencias.svg" alt="boton de alerta">
+                </label> 
+                <div class="alerta-del-nav">
+                    <div class="alert-box">
+                        <p class="alert-title">ATENCIÓN</p>
+                        <p>Toda actividad se suspende por fuertes lluvias</p>
+                    </div>
+                    <div class="horarios-box">
+                        <p class="horarios-title">HORARIOS</p>
+                        <p>Lunes a domingos<br>10 hs a 18.30 hs</p>
+                        <p>ENTRADA LIBRE Y GRATUITA</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
+        <!--boton flotante-->
+        <a href="https://whatsapp.com/channel/0029Vaj1EEw1Hsq1kCZibK2K" target="_blank"><button class="btn-flotante"><img src="img/svg/wpp.png" width="49px" height="49px" alt="whatsapp"></button></a>
         <section class="contenedor-agradecer">
             <div class="agradecer">
                 <div class="contenedor-animacion">
@@ -69,9 +89,9 @@
         </div>
         <div class="mapasitio">
             <ul>
-                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="#inicio">Inicio</a></li>
+                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="index.html">Inicio</a></li>
                 <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="sobrenosotros.html">Sobre nosotros</a></li>
-                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="visitalarecs.html">Visitá la reserva</a></li>
+                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="visita-la-recs.html">Visitá la reserva</a></li>
                 <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="inscripcion.html">Quiero ser COA</a></li>
                 <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="catalogo.html">Catálogo</a></li>
             </ul>            
@@ -81,8 +101,7 @@
             <div class="redes">
                 <p>Seguinos en redes:</p>
                 <a href="https://www.instagram.com/coarecs/" target="_blank"><img src="img/svg/ig.svg" alt="instagram"></a>
-                <a href="mantenimiento.html"><img src="img/svg/x.svg" alt="tw"></a>
-                <a href="mantenimiento.html"><img src="img/svg/youtube.svg" alt="youtube"></a>
+                <a href="https://www.youtube.com/watch?v=ebSASzNQS1Q" target="_blank"><img src="img/svg/youtube.svg" alt="youtube"></a>
                 <a href="https://www.facebook.com/grupocoarecs" target="_blank"><img src="img/svg/face.svg" alt="facebook"></a>
             </div>
         </div>

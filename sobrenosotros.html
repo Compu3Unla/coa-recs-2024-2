@@ -1,57 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>SOBRE NOSOTROS</title>
+    <meta charset="utf-8"/>
+    <title>coarecs-g4</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
 </head>
 <body>
-    <!--INICIO DE BOTONERA-->
     <header>
-        <nav class="botonera">
-            <img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo">
+        <nav class= "botonera">
+            <a href="index.html"><img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo" class="isologo"></a>
             <ul>
-                <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+                <li><a href= "sobrenosotros.html">Sobre nosotros</a></li>
                 <li><a href="visita-la-recs.html">Visitá la reserva</a></li>
                 <li><a href="inscripcion.html">Quiero ser COA</a></li>
             </ul>
-            <img src="img/svg/advertencias.svg" width="50px" height="50px" alt="advertencia">
+            <!--input oculto-->
+            <div class="alert-container">
+                <input type="checkbox" id="alert-toggle" class="alert-toggle">
+                <label for="alert-toggle" class="alert-button">
+                    <img src="img/svg/advertencias.svg" alt="boton de alerta">
+                </label> 
+                <div class="alerta-del-nav">
+                    <div class="alert-box">
+                        <p class="alert-title">ATENCIÓN</p>
+                        <p>Toda actividad se suspende por fuertes lluvias</p>
+                    </div>
+                    <div class="horarios-box">
+                        <p class="horarios-title">HORARIOS</p>
+                        <p>Lunes a domingos<br>10 hs a 18.30 hs</p>
+                        <p>ENTRADA LIBRE Y GRATUITA</p>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
+        <!-- wapp -->
+        <a href="https://whatsapp.com/channel/0029Vaj1EEw1Hsq1kCZibK2K" target="_blank"><button class="btn-flotante"><img src="img/svg/wpp.png" width="49px" height="49px" alt="whatsapp"></button></a>
         <section>
-<!----------------------------------------------------------SLIDER INFINITO AUTOMATICO-->
-            <div class="slider-frame">
-                <ul class="slide">
+            <!--SLIDER GENERAL-->
+            <div class="slider-general">
+                <ul class="slide-portada">
                     <li><img src="img/slider/coa/grupo-campo.jpg" width="1920px" height="856px" alt="fotografia de gente en grupo con cámaras"> <p class="bajada-slider">Fotografiando en grupo</p></li>
                     <li><img src="img/slider/coa/mujer.jpg" width="1920px" height="856px" alt=" mujer mirando el cielo"> <p class="bajada-slider">Mujer supervisando aves</p></li>
                     <li><img src="img/slider/coa/grupo-reserva.jpg" width="1920px" height="856px" alt="grupo fotografiando aves"> <p class="bajada-slider">Grupo fotografiando aves</p></li>
                     <li><img src="img/slider/coa/hombre.jpg" width="1920px" height="856px" alt="hombre con camara fotográfica"><p class="bajada-slider">Hombre fotografiando aves</p></li>
                 </ul>
-            </div>
-<!-----------------------------------------------------------BOTON FLOTANTE WP-->
-            <a href="https://whatsapp.com/channel/0029Vaj1EEw1Hsq1kCZibK2K" target="_blank"><button class="btn-flotante"><img src="img/svg/wpp.png" width="49px" height="49px" alt="whatsapp"></button></a>
-            <div class="texto-slider">
-                <div class="pastilla-slider">
-                    <h1>Sobre nosotros</h1>
-                    <p>Convocamos actividades periódicas y gratuitas sobre la observación de aves silvestres y su conservación</p>
-                </div>
+            </div>            
+            <div class="pastilla-slider">
+                <h1>Sobre nosotros</h1>
+                <p>Convocamos actividades periódicas y<br> gratuitas sobre la observación de aves<br> silvestres y su conservación</p>
+
             </div>
         </section>
         <div class="container">
-            <div class="text-content">
+            <div class="container-cremita">
                 <h2>¿Qué es el COA?</h2>
                 <p>El CoaRECS fue fundado el 17 de mayo de 2008. En ese momento, era crítico el estado del agua en las Lagunas y el Coa es un instrumento útil para aglutinar a la gente de manera organizada para dialogar con las autoridades gubernamentales y favorecer todas las acciones que ayudarán a mantener en condiciones buenas a la RECS.</p>
             </div>
-            <div class="botones-coa-sobre-nosotros">
-                <a href="img/club_de_observadores_codigoconducta.pdf" target="_blank" class="button">Código de Conducta</a>
-                <a href="img/club_de_observadores_codigoconducta.pdf" target="_blank" class="button">Reglamento COA</a>
+            <div class="botones-pdf">
+                <a href="img/sobre-nosotros/manual_normas.pdf" target="_blank" class="button">Código de Conducta</a>
+                <a href="img/sobre-nosotros/coa_reglamento_interno.pdf" target="_blank" class="button">Reglamento COA</a>
             </div>
         </div>
-<!----------------------------------------------------------SLIDER INFINITO comentarios -->
-        <section class="slider-general">
-            <div class="h2-nuestrosmiembros"><h2>Nuestros miembros</h2></div>
+        <!-- comentarios -->
+        <section class="slider-comentarios">
+            <h2>Nuestros miembros</h2>
             <div class="slide-track">
                 <div class="slide-general">
                     <img src="img/scroll_comentarios.jpg" alt="tira de comentarios">
@@ -76,62 +91,86 @@
                 </div>
             </div>
         </section>
-<!----------------------------------------------------------LINEA DE TIEMPO -->
-        <section class="linea_de_tiempo">
-            <div class="seccion-linea">
-                <h1>Nuestra historia</h1>
-                <ul>
-                    <li>
-                        <img src="img/linea-de-tiempo/hoja.jpg" width="227px" alt="Hoja manuscrita con información de coa recs">
-                        <p>17 de Mayo 2008</p>
-                    </li>
-                    <li>
-                        <img src="img/linea-de-tiempo/aves-arg.jpg" width="227px"  alt="Logo de aves argentinas">
-                        <p>19 de Mayo 2008</p>
-                    </li>
-                    <li>
-                        <img src="img/linea-de-tiempo/linea3.jpg" width="227px"  alt="Fotografía de grupo de gente">
-                        <p>31 de Mayo 2008</p>
-                    </li>
-                    <li>
-                        <img src="img/linea-de-tiempo/reconocimiento.jpg" width="227px" alt="Reconocimiento a coa recs">
-                        <p>5 de Junio 2011</p>
-                    </li>
-                </ul>
+        <!-- LINEA DE TIEMPO -->
+        <h2>Nuestra historia</h2>
+        <section class="cardcontenedor">
+            <img class="banda" src="img/la-reserva/fondo-onda-verde.png" width="1920px" alt="banda-verde">
+            <div class="cardpajaros">
+                <div class="card">
+                    <img src="img/linea-de-tiempo/hoja.jpg" width="390px" height="520px" alt="hoja">
+                    <div class="card__contenido">
+                        <p class="card__linea">Creación COA RECS</p>
+                    </div>
+                </div>
+                <div class="nombrelinea">
+                    <h3>17 de Mayo 2008</h3>
+                </div>
             </div>
+            <div class="cardpajaros">
+                <div class="card">
+                    <img src="img/linea-de-tiempo/aves-arg.jpg" width="390px" height="520px" alt="aves argetinas">
+                    <div class="card__contenido">
+                        <p class="card__linea">Firma del convenio con Aves Argentinas</p>
+                    </div>
+                </div>
+                <div class="nombrelinea">
+                    <h3>19 de Mayo 2008</h3>
+                </div>
+            </div>
+            <div class="cardpajaros">
+                <div class="card">
+                    <img src="img/linea-de-tiempo/linea3.jpg" width="390px" height="520px" alt="grupo de gente fotografiando">
+                    <div class="card__contenido">
+                        <p class="card__linea">Primer salida del COA RECS</p>
+                    </div>
+                </div>
+                <div class="nombrelinea">
+                    <h3>31 de Mayo 2008</h3>
+                </div>
+            </div>
+            <div class="cardpajaros">
+                <div class="card">
+                    <img src="img/linea-de-tiempo/reconocimiento.jpg" width="390px" height="520px" alt="reconocimiento">
+                    <div class="card__contenido">
+                        <p class="card__linea">Entrega de reconocimiento</p>
+                    </div>
+                </div>
+                <div class="nombrelinea">
+                    <h3>5 de Junio 2011</h3>
+                </div>
+            </div>
+
+
         </section>
-    
-<!------------------------------------------------------------------SLIDER INFINITO coa -->
-        <section class="slider-general">
-            <div class="amigoscoa">
-                <h1>Nuestros amigos COA</h1>
-            </div>
+        <!-- miembros coa -->
+        <section class="slider-comentarios">
+            <h2>Nuestros amigos COA</h2>
             <div class="slide-track">
                 <div class="slide-general">
-                    <img src="img/scroll_nuestros_amigos_coa.jpg" alt="tira de otros coa">
+                    <img src="img/sobre-nosotros/amigos_otros_coa.svg" alt="tira de amigos coa">
                 </div>
                 <div class="slide-general">
-                    <img src="img/scroll_nuestros_amigos_coa.jpg" alt="tira de otros coa">
+                    <img src="img/sobre-nosotros/amigos_otros_coa.svg" alt="tira de amigos coa">
                 </div>
                 <div class="slide-general">
-                    <img src="img/scroll_nuestros_amigos_coa.jpg" alt="tira de otros coa">
+                    <img src="img/sobre-nosotros/amigos_otros_coa.svg" alt="tira de amigos coa">
                 </div>
                 <div class="slide-general">
-                    <img src="img/scroll_nuestros_amigos_coa.jpg" alt="tira de otros coa">
+                    <img src="img/sobre-nosotros/amigos_otros_coa.svg" alt="tira de amigos coa">
                 </div>
                 <div class="slide-general">
-                    <img src="img/scroll_nuestros_amigos_coa.jpg" alt="tira de otros coa">
+                    <img src="img/sobre-nosotros/amigos_otros_coa.svg" alt="tira de amigos coa">
                 </div>
                 <div class="slide-general">
-                    <img src="img/scroll_nuestros_amigos_coa.jpg" alt="tira de otros coa">
+                    <img src="img/sobre-nosotros/amigos_otros_coa.svg" alt="tira de amigos coa">
                 </div>
                 <div class="slide-general">
-                    <img src="img/scroll_nuestros_amigos_coa.jpg" alt="tira de otros coa">
+                    <img src="img/sobre-nosotros/amigos_otros_coa.svg" alt="tira de amigos coa">
                 </div>
             </div>
         </section>
     </main>
-<!------------------------------------------------------------------------------INICIO DE FOOTER-->
+    <!--FOOTER-->
     <footer>
         <div>
             <img src="img/svg/logogeneral.svg" width="415px" height="186px" alt="logo+titulo">
@@ -143,33 +182,22 @@
         </div>
         <div class="mapasitio">
             <ul>
-                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="#inicio">Inicio</a></li>
-                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="sobrenosotros.html">Sobre
-                        nosotros</a></li>
-                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="visitalarecs.html">Visitá la
-                        reserva</a></li>
-                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="inscripcion.html">Quiero ser
-                        COA</a></li>
-                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="catalogo.html">Catálogo</a>
-                </li>
-            </ul>
+                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="index.html">Inicio</a></li>
+                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="sobrenosotros.html">Sobre nosotros</a></li>
+                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="visita-la-recs.html">Visitá la reserva</a></li>
+                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="inscripcion.html">Quiero ser COA</a></li>
+                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="catalogo.html">Catálogo</a></li>
+            </ul>            
         </div>
         <div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.866986592482!2d-58.354782323360894!3d-34.60752485770075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3351f97fbdf97%3A0xc0a4d539dc2254f!2sReserva%20Ecol%C3%B3gica%20Costanera%20Sur!5e0!3m2!1ses-419!2sar!4v1729278855101!5m2!1ses-419!2sar"
-                width="550px" height="220px" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <ul class="redes">
-                <li>
-                    <p>Seguinos en redes:</p>
-                </li>
-                <li><a href="https://www.instagram.com/coarecs/" target="_blank"><img src="img/svg/ig.svg"
-                            alt="instagram"></a></li>
-                <li><a href="mantenimiento.html"><img src="img/svg/x.svg" alt="tw"></a></li>
-                <li><a href="mantenimiento.html"><img src="img/svg/youtube.svg" alt="youtube"></a></li>
-                <li><a href="https://www.facebook.com/grupocoarecs" target="_blank"><img src="img/svg/face.svg"
-                            alt="facebook"></a></li>
-            </ul>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.866986592482!2d-58.354782323360894!3d-34.60752485770075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3351f97fbdf97%3A0xc0a4d539dc2254f!2sReserva%20Ecol%C3%B3gica%20Costanera%20Sur!5e0!3m2!1ses-419!2sar!4v1729278855101!5m2!1ses-419!2sar" width="550px" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="redes">
+                <p>Seguinos en redes:</p>
+                <a href="https://www.instagram.com/coarecs/" target="_blank"><img src="img/svg/ig.svg" alt="instagram"></a>
+                <a href="https://www.youtube.com/watch?v=ebSASzNQS1Q" target="_blank"><img src="img/svg/youtube.svg" alt="youtube"></a>
+                <a href="https://www.facebook.com/grupocoarecs" target="_blank"><img src="img/svg/face.svg" alt="facebook"></a>
+            </div>
         </div>
     </footer>
     <!--FIN DE FOOTER-->

@@ -16,6 +16,7 @@
                 cambiarDisplay('none')
             }
         </script>
+        <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     </head>
 <body>
     <header>
@@ -26,43 +27,59 @@
                 <li><a href="visita-la-recs.html">Visitá la reserva</a></li>
                 <li><a href="inscripcion.html">Quiero ser COA</a></li>
             </ul>
-            <img src="img/svg/advertencias.svg" width="50px" height="50px" alt="advertencia"> 
-        </nav>                
+            <!--input oculto-->
+            <div class="alert-container">
+                <input type="checkbox" id="alert-toggle" class="alert-toggle">
+                <label for="alert-toggle" class="alert-button">
+                    <img src="img/svg/advertencias.svg" alt="boton de alerta">
+                </label> 
+                <div class="alerta-del-nav">
+                    <div class="alert-box">
+                        <p class="alert-title">ATENCIÓN</p>
+                        <p>Toda actividad se suspende por fuertes lluvias</p>
+                    </div>
+                    <div class="horarios-box">
+                        <p class="horarios-title">HORARIOS</p>
+                        <p>Lunes a domingos<br>10 hs a 18.30 hs</p>
+                        <p>ENTRADA LIBRE Y GRATUITA</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <video width="100%" height="auto" autoplay loop muted>
-                <source src="img\slider\recs\video-coarecs.mp4" type="video/mp4">
+    <!--boton flotante-->
+        <a href="https://whatsapp.com/channel/0029Vaj1EEw1Hsq1kCZibK2K" target="_blank"><button class="btn-flotante"><img src="img/svg/wpp.png" width="49px" height="49px" alt="whatsapp"></button></a>
+        <section> <!-- SLIDE GENERAL -->
+            <video  width="1920" height="856" autoplay loop muted>
+                <source src="img\slider\recs\la-reserva.mp4" type="video/mp4">
             </video>
-            <div class="texto-slider">
-                <div class="pastilla-slider">
-                    <h1>Reserva Ecológica Costanera Sur</h1>
-                    <p>Ciudad Autónoma de Buenos Aires</p>
-                </div>
-                <p class="bajada-slider">Vista Aérea de la RECS</p>
+            <div class="pastilla-slider">
+                <h1>Reserva Ecológica Costanera Sur</h1>
+                <p>Ciudad Autónoma de Buenos Aires </p>
             </div>
         </section>
 
+        <!-- UBICACION -->
         <section class="secciones-ubicacion">
-            <h1>Ubicación</h1>
-            <div class="ubicacion-recs">
+            <h2>Ubicación</h2>
+            <div class="container-cremita">
                 <p>La reserva está en el barrio de Puerto Madero, a 30 min a pie del centro de Buenos Aires.<br>Cuenta con dos accesos: Norte (altura calle Viamonte) y Sur (altura calle Brasil, junto a la famosa fuente de Lola Mora).</p>
             </div>
         </section>
 
+        <!-- MAPAS -->
         <section class="mapa-recs">
             <img src="img\la-reserva\mapa-general.png" width="1160px" height="766px" alt="Mapa de la Reserva Ecológica Costanera Sur">
         </section>
-        <section>
-            <article class="titulo-mapa">
-                <h2>Circuitos</h2>
-            </article>
-        </section>
+
         <section class="g-circuitos">
+            <h2>Circuitos</h2>
+
             <div class="galeria" id="miniaturas">
                 <div class="circuitos">
-                    <a href="#foto-1"><img src="img/la-reserva/circuito-humedales.svg" alt="circuito-grande" onClick="mostrarGaleria()"></a>
+                    <a href="#foto-1"><img src="img/la-reserva/circuito-humedales.svg" width="388px" height="204.9px" alt="circuito-grande" onClick="mostrarGaleria()"></a>
                     <h2>Circuito de los Humedales</h2>
                     <ul class="info-circuitos">
                         <li class="item-circuitos">
@@ -78,8 +95,9 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="circuitos">
-                    <a href="#foto-2"><img src="img/la-reserva/circuito-rio.svg" alt="circuito-humedales" onClick="mostrarGaleria()"></a>
+                    <a href="#foto-2"><img src="img/la-reserva/circuito-rio.svg" width="388px" height="204.9px" alt="circuito-humedales" onClick="mostrarGaleria()"></a>
                     <h2>Circuito del Rio</h2>
                     <ul class="info-circuitos">
                         <li class="item-circuitos">
@@ -95,9 +113,11 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="circuitos">
-                    <a href="#foto-3"><img src="img/la-reserva/circuito-paisajes.svg" alt="circuito-paisajes" onClick="mostrarGaleria()"></a>
+                    <a href="#foto-3"><img src="img/la-reserva/circuito-paisajes.svg"  width="388px" height="204.9px" alt="circuito-paisajes" onClick="mostrarGaleria()"></a>
                     <h2>Circuito de los Paisajes</h2>
+                    
                     <ul class="info-circuitos">
                         <li class="item-circuitos">
                             <img src="img\la-reserva\icono-persona.svg" width="11px" height="21px" alt="Icono que muestra una persona caminando">
@@ -112,8 +132,9 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="circuitos">
-                    <a href="#foto-4"><img src="img/la-reserva/circuito-grande.svg" alt="circuito-rio" onClick="mostrarGaleria()"></a>
+                    <a href="#foto-4"><img src="img/la-reserva/circuito-grande.svg" width="388px" height="204.9px" alt="circuito-rio" onClick="mostrarGaleria()"></a>
                     <h2>Circuito Grande</h2>
                     <ul class="info-circuitos">
                         <li class="item-circuitos">
@@ -131,6 +152,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- galeria oculta -->
         <section id="galeria">
             <div id="fondo-galeria"></div>
             <ul id="galeria-oculta">
@@ -160,9 +183,12 @@
                 </li>
             </ul>
         </section>
+
+        <!-- RECO Y PRECAUCIONES -->
         <section class="consejos">
+            <img class="banda" src="img/la-reserva/fondo-onda-verde.png" width="1920px" alt="banda-verde">
             <div class="secciones-consejos">
-                <h1>Consejos para principiantes</h1>
+                <h2>Consejos para principiantes</h2>
                 <ul>
                     <li>
                         <img src="img\la-reserva\binoculares.svg" width="227px" height="215px" alt="Ilustración de binoculares">
@@ -184,9 +210,9 @@
             </div>
         </section>
         <section class="secciones-recomendaciones">
-            <h1>Recomendaciones y precauciones</h1>
-            <div class="contenedor-recomendaciones">
-                <ul class="recomendaciones">
+            <h2>Recomendaciones y precauciones</h2>
+            <div class="container">
+                <ul class="container-cremita">
                     <li>Respetá el itinerario del sendero, no te separes de los circuitos</li>
                     <li>No alimentes ni molestes a los animales </li>
                     <li>No arrojes residuos</li>
@@ -197,7 +223,7 @@
                     <li>Prohibido cazar y pescar </li>
                     <li>La reserva no cuenta con agua corriente en sus recorridos, llevá hidratación.</li>
                 </ul>
-                <div class="botones-recomendaciones">
+                <div class="botones-pdf">
                     <a href= "img\la-reserva\pdf\Checklist-de-aves-de-la-Reserva-Ecologica.pdf" target="_blank">Checklist</a>
                     <a href="img\la-reserva\pdf\guia-reserva-ecologica.pdf" target="_blank">Guías de la Reserva</a>
                 </div>
@@ -216,9 +242,9 @@
         </div>
         <div class="mapasitio">
             <ul>
-                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="#inicio">Inicio</a></li>
+                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="index.html">Inicio</a></li>
                 <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="sobrenosotros.html">Sobre nosotros</a></li>
-                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="visitalarecs.html">Visitá la reserva</a></li>
+                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="visita-la-recs.html">Visitá la reserva</a></li>
                 <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="inscripcion.html">Quiero ser COA</a></li>
                 <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="catalogo.html">Catálogo</a></li>
             </ul>            
@@ -228,8 +254,7 @@
             <div class="redes">
                 <p>Seguinos en redes:</p>
                 <a href="https://www.instagram.com/coarecs/" target="_blank"><img src="img/svg/ig.svg" alt="instagram"></a>
-                <a href="mantenimiento.html"><img src="img/svg/x.svg" alt="tw"></a>
-                <a href="mantenimiento.html"><img src="img/svg/youtube.svg" alt="youtube"></a>
+                <a href="https://www.youtube.com/watch?v=ebSASzNQS1Q" target="_blank"><img src="img/svg/youtube.svg" alt="youtube"></a>
                 <a href="https://www.facebook.com/grupocoarecs" target="_blank"><img src="img/svg/face.svg" alt="facebook"></a>
             </div>
         </div>
