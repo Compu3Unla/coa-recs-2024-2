@@ -9,10 +9,7 @@
     <!--java para Galeria-->
 <script>
     function cambiarDisplay(visibilidadNueva){
-        document.getElementById("galeria").style.display = visibilidadNueva
-    }
-    function mostrarGaleria(){
-        cambiarDisplay('flex')
+        document.getElementById("calendario").style.display = visibilidadNueva
     }
     function ocultarGaleria(){
         cambiarDisplay('none')
@@ -21,12 +18,13 @@
 
 </head>
 <body>
-    <section> <!--CHEQUEAR PORQUE NO FUNCIONA-->
+    <!-- calendari pop up -->
+    <section> 
         <!-- Checkbox oculto para controlar el estado del pop-up -->
         <input type="checkbox" id="popup-toggle" checked/>
         <!-- Pop-up Overlay -->
-        <div class="popup-overlay">
-            <div class="popup-index" id="galeria-popup">
+        <div id="calendario" class="popup-overlay">
+            <div class="popup-index">
                 <img class="close-popup-index" src="img/la-reserva/x-circle.svg" alt="Cerrar" width="30px" height="30px" onClick="ocultarGaleria()">
                 <!-- Iconos superiores -->
                 <div class="icons">
@@ -101,6 +99,7 @@
             </div>
         </div>
     </section>
+
     <header>
         <nav class= "botonera">
             <a href="index.html"><img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo" class="isologo"></a>
@@ -109,6 +108,7 @@
                 <li><a href="visita-la-recs.html">Visitá la reserva</a></li>
                 <li><a href="inscripcion.html">Quiero ser COA</a></li>
             </ul>
+
             <!--input oculto-->
             <div class="alert-container">
                 <input type="checkbox" id="alert-toggle" class="alert-toggle">
@@ -146,27 +146,26 @@
             </div>            
         </div>
 
-
         <!--Novedades-->
         <section class="novedades">            
             <h1>Novedades</h1>
             <div class="nov-cont">
                 <div class="cont-izq">
                     <img class="nov-cont-img" src="img/index/laguna.jpg" width="525px" height="277px" alt="laguna seca">
-                    <h2>La Ciudad recuperó  la Laguna de los Patos en la Reserva Ecológica Costanera Sur</h2>
+                    <h6>La Ciudad recuperó  la Laguna de los Patos en la Reserva Ecológica Costanera Sur</h6>
                     <p>Se realizó una obra de regeneración ambiental para revertir los efectos de las sequías registradas desde 2008, ocasionadas por el fenómeno de La Niña.
                     La Laguna de los Patos se encuentra a metros del Centro de Interpretación y ocupa tres hectáreas</p>
                 </div>
                 <div class="cont-centro">
                     <img class="nov-cont-img" src="img/index/lechuzas.jpg" width="311px" height="277px" alt="chica con lechuza">
-                    <h2>Se liberaron dos lechuzas</h2>
+                    <h6>Se liberaron dos lechuzas</h6>
                     <p>
                         Habían sido rescatadas y cuidadas en elCentro de Rescate de Fauna Silvestre dentro de la Reserva Ecológica Costanera Sur. Ingresaron  con tres semanas de vida.                          
                     </p>
                 </div>
                 <div class="cont-der">
                     <img class="nov-cont-img" src="img/index/pasarelas-nov.jpg" width="525px" height="277px" alt="pasarelas de novedades">
-                    <h2>Nuevo acceso a la Reserva Ecológica</h2>
+                    <h6>Nuevo acceso a la Reserva Ecológica</h6>
                     <p>
                         La nueva entrada en la calle Viamonte es más amplia y tiene mejores instalaciones.
                         El nuevo acceso está al lado de la entrada ubicada en la intersección de la calle Mariquita Sánchez de Thompson  y la avenida Giralt, proximidad cercana a Puerto Madero  más utilizada por los visitantes.
@@ -336,9 +335,7 @@
             <details>
                 <summary>
                     <h1>¿Qué aves podemos ver hoy en la Recs?</h1>
-                    <button class="flecha-preg">
-                        <img src="img/svg/flecha-preguntas.svg" width="25px" height="12px">
-                    </button>
+                    <button class="flecha-preg"></button>
                 </summary>
                 <ul class="respuesta">
                     <li>Podrás observar mistos (Sicalis luteola), piquito de plata (Hymenops perspicillatus),tacuarita azul (Polioptila dumicola), jilgueros (Sicalis flaveola), calandrias (Mimus saturninus), carpinteros reales (Colaptes melanochloros), hocó colorado (Tigrisoma linetaum), picaflor bronceado (Hylocharis chrysura), cardenales (Paroaria coronata) y tijeretas (Tyrannus savana), por destacar a algunos.</li>
