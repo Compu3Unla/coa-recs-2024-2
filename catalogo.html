@@ -6,7 +6,7 @@
     <link href="estilos.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <header> <!-- Empiezo con header y footer asi puedo adelantar algo-->
+    <header>
         <nav class= "botonera">
             <a href=index.html ><img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo" class="isologo"></a>
             <ul>
@@ -14,11 +14,13 @@
                 <li><a href="visita-la-recs.html">Visitá la reserva</a></li>
                 <li><a href="inscripcion.html">Quiero ser COA</a></li>
             </ul>
-            <img src="img/svg/advertencias.svg" width="50px" height="50px" alt="advertencia"> <!--genere una nueva carpeta en IMG que se llama "svg"-->
+            <img src="img/svg/advertencias.svg" width="50px" height="50px" alt="advertencia">
         </nav>                
     </header>
     <main>
-        <div class="slider-frame">
+        <!--boton flotante-->
+        <a href="https://whatsapp.com/channel/0029Vaj1EEw1Hsq1kCZibK2K" target="_blank"><button class="btn-flotante"><img src="img/svg/wpp.png" width="49px" height="49px" alt="whatsapp"></button></a>
+        <div class="slider-general">
             <ul class="slide-automatico">
                 <li><img src="img/slider/catalogo/patos-volando.jpg" width="1920px" height="856px" alt="patos-volando"> <p class="bajada-slider">Bandada de patos</p></li>
                 <li><img src="img/slider/catalogo/nido-hornero.jpg" width="1920px" height="856px" alt="nido-hornero"> <p class="bajada-slider">Nido de hornero</p></li>
@@ -26,15 +28,13 @@
                 <li><img src="img/slider/catalogo/churrinche.jpg" width="1920px" height="856px" alt="churrinche"> <p class="bajada-slider">Pájaro churrinche</p></li>
             </ul>
         </div>
-            <div class="texto-slider">
+        <div class="texto-slider">
             <div class="pastilla-slider">
                 <h1>Guía digital fotográfica de Aves</h1>
                 <p>Conoce todo sobre las aves en argentina y disfruta </p><p> sus maravillosos cantos</p>
             </div>
         </div>
-        <div> <!--boton flotante-->
-            <a href="https://whatsapp.com/channel/0029Vaj1EEw1Hsq1kCZibK2K" target="_blank"><button class="btn-flotante"><img src="img/svg/wpp.png" width="49px" height="49px" alt="whatsapp"></button></a>
-        </div>
+        <!--card por pajaro-->
         <div class="cardcontenedor">
             <div class="cardpajaros">
                 <div class="card">
@@ -474,9 +474,11 @@
                 </div>
             </div>
         </div>
+        <!-------------------------------------------------------fin de tercer fila-->
         <div class="registros">
             <p>¿Lograste registrar alguno?<br>Compartilo utilizando el hashtag #COARECS</p>
         </div>
+    </main>
     <footer>
         <div>
             <img src="img/svg/logogeneral.svg" width="415px" height="186px" alt="logo+titulo">
@@ -488,9 +490,9 @@
         </div>
         <div class="mapasitio">
             <ul>
-                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="#inicio">Inicio</a></li>
+                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="index.html">Inicio</a></li>
                 <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="sobrenosotros.html">Sobre nosotros</a></li>
-                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="visitalarecs.html">Visitá la reserva</a></li>
+                <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="visita-la-recs.html">Visitá la reserva</a></li>
                 <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="inscripcion.html">Quiero ser COA</a></li>
                 <li><img src="img/svg/estrellas.svg" width="33px" height="33px"><a href="catalogo.html">Catálogo</a></li>
             </ul>            
@@ -500,8 +502,7 @@
             <div class="redes">
                 <p>Seguinos en redes:</p>
                 <a href="https://www.instagram.com/coarecs/" target="_blank"><img src="img/svg/ig.svg" alt="instagram"></a>
-                <a href="mantenimiento.html"><img src="img/svg/x.svg" alt="tw"></a>
-                <a href="mantenimiento.html"><img src="img/svg/youtube.svg" alt="youtube"></a>
+                <a href="https://www.youtube.com/watch?v=ebSASzNQS1Q" target="_blank"><img src="img/svg/youtube.svg" alt="youtube"></a>
                 <a href="https://www.facebook.com/grupocoarecs" target="_blank"><img src="img/svg/face.svg" alt="facebook"></a>
             </div>
         </div>
