@@ -159,13 +159,20 @@ h5 {
     align-items: flex-end;
     margin: 50px 0px;
 }
+
+.container-reserva {
+    display: flex;
+    gap: 50px;
+    align-items: flex-end;
+    margin: 0;
+}
+
 .container-cremita {
     background-color: #F6EDD9;
     max-width: 950px;
     max-height: fit-content;
     border-bottom-right-radius: 100px;
     padding: 30px 50px 30px 120px;
-
 }
 
 .container-cremita h2 {
@@ -644,7 +651,7 @@ video {
 }
 
 .secciones-ubicacion , .mapa-recs , .secciones-circuitos , .secciones-consejos , .secciones-recomendaciones {
-    padding:90px 80px;  /*60px 0px;*/
+    padding:90px 0px;
 }
 
 .mapa-recs {
@@ -658,8 +665,6 @@ video {
     z-index: -1;
 }
 .secciones-consejos ul {
-    /*display: flex;
-    justify-content: space-between;*/
     display: flex;
     margin-top: 60px;
     justify-content: space-evenly;
@@ -677,10 +682,14 @@ video {
     margin-top: 50px;
 }
 
+.tip-consejo h2 {
+    padding: 0;
+}
+
 .secciones-recomendaciones {
     display: flex;
     flex-direction: column;
-    padding-right: 120px; /*no hace nada*/
+    margin-top: 60px;
 }
 
 .contenedor-recomendaciones {
@@ -822,7 +831,7 @@ input {
 .galeria {
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 50px;
+    padding: 0px 35px 50px 35px;
 }
 .g-circuito img {
     border-radius: 40px;
