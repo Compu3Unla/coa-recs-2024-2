@@ -1538,6 +1538,55 @@ footer{
 
 
 
+/*--------------------------------------------------------- es de ANTO----------------------------------POP UP ALERTA*/
+.alert-toggle {
+    display: none;
+}
+.alert-button img {
+    cursor: pointer;
+}
+.alerta-del-nav {
+    display: none;
+    position: absolute;
+    top: 90px; 
+    right: 10px;
+    background-color: #18322a; 
+    border-radius: 15px;
+    padding: 20px 10px;
+    width: 320px;
+    text-align: center;
+    z-index: 10;
+}
+.alert-box, .horarios-box {
+    background-color: #f5f1dc;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+}
+.alert-box p, .horarios-box p {
+    margin: 10px 0;
+    color: #18322a;
+}
+.alert-box .alert-title {
+    font-weight: bold;
+    color: #d9534f; 
+    margin-bottom: 10px;
+}
+.alert-box p {
+    color: #d9534f;
+    font-weight: bold; 
+}
+.horarios-title {
+    font-weight: bold;
+    color: #18322a; 
+    margin-bottom: 10px;
+}
+/*menú de alerta cuando el checkbox está activado */
+.alert-toggle:checked ~ .alerta-del-nav {
+    display: block;
+}
 
 
 
