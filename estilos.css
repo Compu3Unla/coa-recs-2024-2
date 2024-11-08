@@ -102,6 +102,18 @@
 .botonera li:hover {
     background-color:#A0B210;
 }
+
+.menu-derecho {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu-derecho input {
+    display: none;
+}
+
 /* ------------------- estilos de H ------------------- */
 h1 {
     font-size: 2em;
@@ -1345,6 +1357,7 @@ footer{
         display: flex;
         align-items: center;
         gap: 45px;
+        justify-content: flex-end;
     }
 
     .menu-derecho input {
@@ -1358,7 +1371,7 @@ footer{
         gap: 24px;
         width: 100%;
         height: 100vh;
-        background-color: #1D1D1B;
+        background-color: #F6EDD9;
         position: fixed;
         top: 0;
         right: 0;
@@ -1368,7 +1381,9 @@ footer{
     }
 	#menu-nav li {
 		display: flex;
-		text-align: center;
+        text-align: center;
+        width: 250px;
+        justify-content: center;
 	}
 
     #menu-nav li a {      
