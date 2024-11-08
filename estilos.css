@@ -344,6 +344,10 @@ summary h2 , .respuesta h2 {
     align-items: baseline;
     gap: 10px;
 }
+.respuesta li h6{
+    padding: 0px;
+} 
+
 details[open] summary .flecha-preg {
     transform: rotate(180deg);
 }
