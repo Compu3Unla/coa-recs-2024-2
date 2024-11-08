@@ -84,6 +84,7 @@
     padding: 20px 120px;
     align-items: center;
 }
+
 .botonera ul {
     display: flex;
     gap: 60px;
@@ -310,7 +311,7 @@ summary {
     transition: margin 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-summary h2 , .respuesta h2 {
+summary h2 , .respuesta h2 , .contenedor-agradecer h2 {
     padding: 0;
 }
 
@@ -480,16 +481,10 @@ footer{
     font-weight: 400;
 }
 /*----------------------------------------------------inicio de catálogo parajos*/
-/* .catalogo-principal {
-    padding: 0px 120px;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-} */
-
 .cardcontenedor{
+    margin: 100px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 .card {
@@ -1003,6 +998,7 @@ input {
     position: relative;
     width: 100px; /* Ajusta el tamaño según necesites */
     height: 100px;
+    margin-bottom: 30px;
 }
 
 .bird-body {
