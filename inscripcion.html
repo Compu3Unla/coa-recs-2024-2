@@ -2,6 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>coarecs-g4</title>
     <link href="estilos.css" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
@@ -9,27 +11,34 @@
 <body>
     <header>
         <nav class= "botonera">
-            <a href="index.html"><img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo" class="isologo"></a>
-            <ul>
-                <li><a href= "sobrenosotros.html">Sobre nosotros</a></li>
-                <li><a href="visita-la-recs.html">Visitá la reserva</a></li>
-                <li><a href="inscripcion.html">Quiero ser COA</a></li>
-            </ul>
-            <!--input oculto-->
-            <div class="alert-container">
-                <input type="checkbox" id="alert-toggle" class="alert-toggle">
-                <label for="alert-toggle" class="alert-button">
-                    <img src="img/svg/advertencias.svg" alt="boton de alerta">
-                </label> 
-                <div class="alerta-del-nav">
-                    <div class="alert-box">
-                        <p class="alert-title">ATENCIÓN</p>
-                        <p>Toda actividad se suspende por fuertes lluvias</p>
-                    </div>
-                    <div class="horarios-box">
-                        <p class="horarios-title">HORARIOS</p>
-                        <p>Lunes a domingos<br>10 hs a 18.30 hs</p>
-                        <p>ENTRADA LIBRE Y GRATUITA</p>
+            <div>
+                <a href="index.html"><img src="img/svg/isologotipo.svg" width="150px" height="80px" alt="isologo" class="isologo"></a>
+            </div>
+            <div class="menu-derecho">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon"></label> 
+                
+                <ul id="menu-nav">
+                    <li><a href= "sobrenosotros.html">Sobre nosotros</a></li>
+                    <li><a href="visita-la-recs.html">Visitá la reserva</a></li>
+                    <li><a href="inscripcion.html">Quiero ser COA</a></li>
+                </ul>
+                <!--input oculto-->
+                <div class="alert-container">
+                    <input type="checkbox" id="alert-toggle" class="alert-toggle">
+                    <label for="alert-toggle" class="alert-button">
+                        <img src="img/svg/advertencias.svg" alt="boton de alerta">
+                    </label> 
+                    <div class="alerta-del-nav">
+                        <div class="alert-box">
+                            <p class="alert-title">ATENCIÓN</p>
+                            <p>Toda actividad se suspende por fuertes lluvias</p>
+                        </div>
+                        <div class="horarios-box">
+                            <p class="horarios-title">HORARIOS</p>
+                            <p>Lunes a domingos<br>10 hs a 18.30 hs</p>
+                            <p>ENTRADA LIBRE Y GRATUITA</p>
+                        </div>
                     </div>
                 </div>
             </div>
