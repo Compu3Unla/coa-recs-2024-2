@@ -261,6 +261,11 @@ p {
     margin: 0px 120px;
 }
 
+.catalogo-index .cardcontenedor {
+    margin: 0;
+    justify-content: space-between;
+}
+
 .cards-index {
     display: flex;
     justify-content: space-between;
